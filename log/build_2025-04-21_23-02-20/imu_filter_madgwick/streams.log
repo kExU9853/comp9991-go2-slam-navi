@@ -1,0 +1,114 @@
+[0.041s] Invoking command in '/home/xk/go2_slam_nav/build/imu_filter_madgwick': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/xk/go2_slam_nav/src/imu_tools/imu_filter_madgwick -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xk/go2_slam_nav/install/imu_filter_madgwick
+[0.584s] -- The C compiler identification is GNU 8.4.0
+[0.584s] -- The CXX compiler identification is GNU 8.4.0
+[0.584s] -- Check for working C compiler: /usr/bin/cc
+[0.584s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.584s] -- Detecting C compiler ABI info
+[0.585s] -- Detecting C compiler ABI info - done
+[0.585s] -- Detecting C compile features
+[0.585s] -- Detecting C compile features - done
+[0.585s] -- Check for working CXX compiler: /usr/bin/c++
+[0.585s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.585s] -- Detecting CXX compiler ABI info
+[0.586s] -- Detecting CXX compiler ABI info - done
+[0.586s] -- Detecting CXX compile features
+[0.587s] -- Detecting CXX compile features - done
+[0.587s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.587s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.587s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.797s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.849s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.965s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.984s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.191s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.282s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.667s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.079s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.091s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.096s] -- Looking for pthread.h
+[2.492s] -- Looking for pthread.h - found
+[2.493s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.975s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[2.976s] -- Looking for pthread_create in pthreads
+[3.368s] -- Looking for pthread_create in pthreads - not found
+[3.369s] -- Looking for pthread_create in pthread
+[3.794s] -- Looking for pthread_create in pthread - found
+[3.832s] -- Found Threads: TRUE  
+[5.298s] -- Found rclcpp_components: 2.4.3 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[5.892s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[6.237s] -- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+[6.321s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[6.347s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[8.177s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[8.499s] -- Found ament_cmake_gtest: 0.9.12 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)
+[8.514s] -- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[8.521s] -- Check if compiler accepts -pthread
+[8.778s] -- Check if compiler accepts -pthread - yes
+[9.058s] -- Configuring done
+[9.205s] -- Generating done
+[9.256s] -- Build files have been written to: /home/xk/go2_slam_nav/build/imu_filter_madgwick
+[9.287s] Invoked command in '/home/xk/go2_slam_nav/build/imu_filter_madgwick' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/xk/go2_slam_nav/src/imu_tools/imu_filter_madgwick -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xk/go2_slam_nav/install/imu_filter_madgwick
+[9.300s] Invoking command in '/home/xk/go2_slam_nav/build/imu_filter_madgwick': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/xk/go2_slam_nav/build/imu_filter_madgwick -- -j8 -l8
+[9.465s] [35m[1mScanning dependencies of target imu_filter_madgwick[0m
+[9.467s] [35m[1mScanning dependencies of target gtest[0m
+[9.468s] [35m[1mScanning dependencies of target gtest_main[0m
+[9.558s] [  7%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[9.571s] [ 14%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[9.668s] [ 21%] [32mBuilding CXX object CMakeFiles/imu_filter_madgwick.dir/src/imu_filter.cpp.o[0m
+[9.682s] [ 28%] [32mBuilding CXX object CMakeFiles/imu_filter_madgwick.dir/src/imu_filter_ros.cpp.o[0m
+[9.707s] [ 35%] [32mBuilding CXX object CMakeFiles/imu_filter_madgwick.dir/src/stateless_orientation.cpp.o[0m
+[12.775s] [ 42%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[12.912s] [ 42%] Built target gtest_main
+[30.484s] [ 50%] [32m[1mLinking CXX static library libgtest.a[0m
+[31.063s] [ 50%] Built target gtest
+[67.101s] [ 57%] [32m[1mLinking CXX shared library libimu_filter_madgwick.so[0m
+[68.388s] [ 57%] Built target imu_filter_madgwick
+[68.410s] [35m[1mScanning dependencies of target imu_filter_madgwick_node[0m
+[68.411s] [35m[1mScanning dependencies of target stateless_orientation_test[0m
+[68.411s] [35m[1mScanning dependencies of target madgwick_test[0m
+[68.445s] [ 64%] [32mBuilding CXX object test/CMakeFiles/madgwick_test.dir/madgwick_test.cpp.o[0m
+[68.454s] [ 71%] [32mBuilding CXX object test/CMakeFiles/stateless_orientation_test.dir/stateless_orientation_test.cpp.o[0m
+[68.504s] [ 78%] [32mBuilding CXX object CMakeFiles/imu_filter_madgwick_node.dir/src/imu_filter_node.cpp.o[0m
+[70.605s] [ 85%] [32m[1mLinking CXX executable madgwick_test[0m
+[70.952s] [ 92%] [32m[1mLinking CXX executable stateless_orientation_test[0m
+[71.509s] [ 92%] Built target madgwick_test
+[71.886s] [ 92%] Built target stateless_orientation_test
+[72.419s] [100%] [32m[1mLinking CXX executable imu_filter_madgwick_node[0m
+[72.942s] [100%] Built target imu_filter_madgwick_node
+[72.963s] Invoked command in '/home/xk/go2_slam_nav/build/imu_filter_madgwick' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/xk/go2_slam_nav/build/imu_filter_madgwick -- -j8 -l8
+[72.968s] Invoking command in '/home/xk/go2_slam_nav/build/imu_filter_madgwick': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/xk/go2_slam_nav/build/imu_filter_madgwick
+[72.983s] -- Install configuration: ""
+[72.984s] -- Execute custom install script
+[72.985s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/include/imu_filter_madgwick/base_node.hpp
+[73.002s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/include/imu_filter_madgwick/imu_filter.h
+[73.020s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/include/imu_filter_madgwick/imu_filter_ros.h
+[73.037s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/include/imu_filter_madgwick/stateless_orientation.h
+[73.055s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/include/imu_filter_madgwick/visibility_control.h
+[73.072s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/include/imu_filter_madgwick/world_frame.h
+[73.090s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/lib/imu_filter_madgwick/imu_filter_madgwick_node
+[73.109s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/launch/imu_filter.launch.py
+[73.126s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/launch/imu_filter_component.launch.py
+[73.143s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/config/imu_filter.yaml
+[73.161s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/library_path.sh
+[73.178s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/library_path.dsv
+[73.197s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/ament_index/resource_index/package_run_dependencies/imu_filter_madgwick
+[73.214s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/ament_index/resource_index/parent_prefix_path/imu_filter_madgwick
+[73.230s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/ament_prefix_path.sh
+[73.246s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/ament_prefix_path.dsv
+[73.261s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/path.sh
+[73.277s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/path.dsv
+[73.293s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.bash
+[73.308s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.sh
+[73.324s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.zsh
+[73.340s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.dsv
+[73.355s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/package.dsv
+[73.371s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/ament_index/resource_index/packages/imu_filter_madgwick
+[73.387s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/ament_index/resource_index/rclcpp_components/imu_filter_madgwick
+[73.402s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/ament_cmake_export_include_directories-extras.cmake
+[73.418s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/ament_cmake_export_libraries-extras.cmake
+[73.434s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/imu_filter_madgwickConfig.cmake
+[73.451s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/imu_filter_madgwickConfig-version.cmake
+[73.467s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/package.xml
+[73.483s] -- Installing: /home/xk/go2_slam_nav/install/imu_filter_madgwick/lib/libimu_filter_madgwick.so
+[73.495s] -- Set runtime path of "/home/xk/go2_slam_nav/install/imu_filter_madgwick/lib/libimu_filter_madgwick.so" to ""
+[73.499s] Invoked command in '/home/xk/go2_slam_nav/build/imu_filter_madgwick' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/xk/go2_slam_nav/build/imu_filter_madgwick

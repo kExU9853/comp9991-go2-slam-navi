@@ -1,0 +1,1216 @@
+[0.000000] (-) TimerEvent: {}
+[0.000334] (go2_nav2) JobQueued: {'identifier': 'go2_nav2', 'dependencies': OrderedDict()}
+[0.000372] (go2_rtabmap) JobQueued: {'identifier': 'go2_rtabmap', 'dependencies': OrderedDict()}
+[0.000393] (imu_complementary_filter) JobQueued: {'identifier': 'imu_complementary_filter', 'dependencies': OrderedDict()}
+[0.000412] (imu_filter_madgwick) JobQueued: {'identifier': 'imu_filter_madgwick', 'dependencies': OrderedDict()}
+[0.000429] (my_unitree_controller) JobQueued: {'identifier': 'my_unitree_controller', 'dependencies': OrderedDict()}
+[0.000446] (rviz_imu_plugin) JobQueued: {'identifier': 'rviz_imu_plugin', 'dependencies': OrderedDict()}
+[0.000462] (imu_tools) JobQueued: {'identifier': 'imu_tools', 'dependencies': OrderedDict([('imu_complementary_filter', '/home/xk/go2_slam_nav/install/imu_complementary_filter'), ('imu_filter_madgwick', '/home/xk/go2_slam_nav/install/imu_filter_madgwick'), ('rviz_imu_plugin', '/home/xk/go2_slam_nav/install/rviz_imu_plugin')])}
+[0.000855] (imu_complementary_filter) JobStarted: {'identifier': 'imu_complementary_filter'}
+[0.008936] (imu_filter_madgwick) JobStarted: {'identifier': 'imu_filter_madgwick'}
+[0.015201] (rviz_imu_plugin) JobStarted: {'identifier': 'rviz_imu_plugin'}
+[0.021619] (go2_nav2) JobStarted: {'identifier': 'go2_nav2'}
+[0.027659] (go2_rtabmap) JobStarted: {'identifier': 'go2_rtabmap'}
+[0.035030] (my_unitree_controller) JobStarted: {'identifier': 'my_unitree_controller'}
+[0.044028] (imu_complementary_filter) JobProgress: {'identifier': 'imu_complementary_filter', 'progress': 'cmake'}
+[0.044567] (imu_complementary_filter) Command: {'cmd': ['/usr/bin/cmake', '/home/xk/go2_slam_nav/src/imu_tools/imu_complementary_filter', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/xk/go2_slam_nav/install/imu_complementary_filter'], 'cwd': '/home/xk/go2_slam_nav/build/imu_complementary_filter', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'xk'), ('LC_TIME', 'en_AU.UTF-8'), ('SSH_AGENT_PID', '4166'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib:'), ('HOME', '/home/xk'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces>\n                            <NetworkInterface name="enp0s31f6" priority="default" multicast="default" />\n                        </Interfaces></General></Domain></CycloneDDS>'), ('OLDPWD', '/home/xk'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'en_AU.UTF-8'), ('MANAGERPID', '4090'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'xk'), ('JOURNAL_STREAM', '8:123580'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/x86_64-linux-gnu/pkgconfig:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/xk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/xk:@/tmp/.ICE-unix/4222,unix/xk:/tmp/.ICE-unix/4222'), ('GDM_LANG', 'en_AU'), ('INVOCATION_ID', '60b5be679248416cbb839d3f155696f7'), ('PAPERSIZE', 'a4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_AU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/30b98a50_2d62_4195_8a05_42ab8fb7b3a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_AU.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/xk/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.364'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/xk'), ('AMENT_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_AU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_AU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_AU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xk/go2_slam_nav/build/imu_complementary_filter'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_AU.UTF-8'), ('LC_PAPER', 'en_AU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[0.048444] (imu_filter_madgwick) JobProgress: {'identifier': 'imu_filter_madgwick', 'progress': 'cmake'}
+[0.049022] (imu_filter_madgwick) Command: {'cmd': ['/usr/bin/cmake', '/home/xk/go2_slam_nav/src/imu_tools/imu_filter_madgwick', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/xk/go2_slam_nav/install/imu_filter_madgwick'], 'cwd': '/home/xk/go2_slam_nav/build/imu_filter_madgwick', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'xk'), ('LC_TIME', 'en_AU.UTF-8'), ('SSH_AGENT_PID', '4166'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib:'), ('HOME', '/home/xk'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces>\n                            <NetworkInterface name="enp0s31f6" priority="default" multicast="default" />\n                        </Interfaces></General></Domain></CycloneDDS>'), ('OLDPWD', '/home/xk'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'en_AU.UTF-8'), ('MANAGERPID', '4090'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'xk'), ('JOURNAL_STREAM', '8:123580'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/x86_64-linux-gnu/pkgconfig:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/xk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/xk:@/tmp/.ICE-unix/4222,unix/xk:/tmp/.ICE-unix/4222'), ('GDM_LANG', 'en_AU'), ('INVOCATION_ID', '60b5be679248416cbb839d3f155696f7'), ('PAPERSIZE', 'a4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_AU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/30b98a50_2d62_4195_8a05_42ab8fb7b3a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_AU.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/xk/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.364'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/xk'), ('AMENT_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_AU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_AU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_AU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xk/go2_slam_nav/build/imu_filter_madgwick'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_AU.UTF-8'), ('LC_PAPER', 'en_AU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[0.051846] (rviz_imu_plugin) JobProgress: {'identifier': 'rviz_imu_plugin', 'progress': 'cmake'}
+[0.053254] (rviz_imu_plugin) Command: {'cmd': ['/usr/bin/cmake', '/home/xk/go2_slam_nav/src/imu_tools/rviz_imu_plugin', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/xk/go2_slam_nav/install/rviz_imu_plugin'], 'cwd': '/home/xk/go2_slam_nav/build/rviz_imu_plugin', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'xk'), ('LC_TIME', 'en_AU.UTF-8'), ('SSH_AGENT_PID', '4166'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib:'), ('HOME', '/home/xk'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces>\n                            <NetworkInterface name="enp0s31f6" priority="default" multicast="default" />\n                        </Interfaces></General></Domain></CycloneDDS>'), ('OLDPWD', '/home/xk'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'en_AU.UTF-8'), ('MANAGERPID', '4090'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'xk'), ('JOURNAL_STREAM', '8:123580'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/x86_64-linux-gnu/pkgconfig:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/xk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/xk:@/tmp/.ICE-unix/4222,unix/xk:/tmp/.ICE-unix/4222'), ('GDM_LANG', 'en_AU'), ('INVOCATION_ID', '60b5be679248416cbb839d3f155696f7'), ('PAPERSIZE', 'a4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_AU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/30b98a50_2d62_4195_8a05_42ab8fb7b3a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_AU.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/xk/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.364'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/xk'), ('AMENT_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_AU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_AU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_AU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xk/go2_slam_nav/build/rviz_imu_plugin'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_AU.UTF-8'), ('LC_PAPER', 'en_AU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[0.100058] (-) TimerEvent: {}
+[0.200501] (-) TimerEvent: {}
+[0.300811] (-) TimerEvent: {}
+[0.401180] (-) TimerEvent: {}
+[0.501626] (-) TimerEvent: {}
+[0.591345] (imu_filter_madgwick) StdoutLine: {'line': b'-- The C compiler identification is GNU 8.4.0\n'}
+[0.592675] (imu_filter_madgwick) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 8.4.0\n'}
+[0.592826] (imu_filter_madgwick) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.592962] (imu_filter_madgwick) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.593102] (imu_filter_madgwick) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.593399] (imu_filter_madgwick) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.593619] (imu_filter_madgwick) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.593760] (imu_filter_madgwick) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.593914] (imu_filter_madgwick) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.594056] (imu_filter_madgwick) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.594198] (imu_filter_madgwick) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.594476] (imu_filter_madgwick) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.594641] (imu_filter_madgwick) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.594781] (imu_filter_madgwick) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.595957] (imu_filter_madgwick) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.596221] (imu_filter_madgwick) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.596363] (imu_filter_madgwick) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.596496] (imu_complementary_filter) StdoutLine: {'line': b'-- The C compiler identification is GNU 8.4.0\n'}
+[0.596950] (imu_complementary_filter) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 8.4.0\n'}
+[0.597114] (imu_complementary_filter) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.599452] (imu_complementary_filter) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.599625] (imu_complementary_filter) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.599779] (imu_complementary_filter) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.600020] (imu_complementary_filter) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.600169] (imu_complementary_filter) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.600309] (imu_complementary_filter) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.600448] (imu_complementary_filter) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.600588] (imu_complementary_filter) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600727] (imu_complementary_filter) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.600879] (imu_complementary_filter) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.601018] (imu_complementary_filter) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.601156] (imu_complementary_filter) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.601300] (imu_complementary_filter) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.601444] (imu_complementary_filter) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.601585] (rviz_imu_plugin) StdoutLine: {'line': b'-- The C compiler identification is GNU 8.4.0\n'}
+[0.601767] (-) TimerEvent: {}
+[0.602023] (rviz_imu_plugin) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 8.4.0\n'}
+[0.602180] (rviz_imu_plugin) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.602324] (rviz_imu_plugin) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.602465] (rviz_imu_plugin) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.602605] (rviz_imu_plugin) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.602742] (rviz_imu_plugin) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.602880] (rviz_imu_plugin) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.603016] (rviz_imu_plugin) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.603153] (rviz_imu_plugin) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.603288] (rviz_imu_plugin) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.603423] (rviz_imu_plugin) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.603558] (rviz_imu_plugin) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.603694] (rviz_imu_plugin) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.603831] (rviz_imu_plugin) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.603981] (rviz_imu_plugin) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.604121] (rviz_imu_plugin) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.701871] (-) TimerEvent: {}
+[0.735048] (imu_complementary_filter) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.762311] (rviz_imu_plugin) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.801171] (imu_complementary_filter) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[0.801957] (-) TimerEvent: {}
+[0.805421] (imu_filter_madgwick) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.806252] (rviz_imu_plugin) StdoutLine: {'line': b'-- Found message_filters: 3.2.7 (/opt/ros/foxy/share/message_filters/cmake)\n'}
+[0.829009] (rviz_imu_plugin) StdoutLine: {'line': b'-- Found rviz_common: 8.2.8 (/opt/ros/foxy/share/rviz_common/cmake)\n'}
+[0.842132] (rviz_imu_plugin) StdoutLine: {'line': b"-- Setting OGRE_DIR to: '/opt/ros/foxy/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'\n"}
+[0.845993] (rviz_imu_plugin) StdoutLine: {'line': b'-- Found OGRE\n'}
+[0.846275] (rviz_imu_plugin) StdoutLine: {'line': b'--   static     : OFF\n'}
+[0.846490] (rviz_imu_plugin) StdoutLine: {'line': b'--   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume\n'}
+[0.846695] (rviz_imu_plugin) StdoutLine: {'line': b'--   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[0.846980] (rviz_imu_plugin) StdoutLine: {'line': b'--   media      : /opt/ros/foxy/opt/rviz_ogre_vendor/share/OGRE/Media\n'}
+[0.847192] (rviz_imu_plugin) StdoutLine: {'line': b'-- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain\n'}
+[0.847396] (rviz_imu_plugin) StdoutLine: {'line': b'-- OGRE_LIBRARY_DIRS: /opt/ros/foxy/opt/rviz_ogre_vendor/lib\n'}
+[0.847596] (rviz_imu_plugin) StdoutLine: {'line': b'-- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[0.847873] (rviz_imu_plugin) StdoutLine: {'line': b'-- OGRE_PLUGIN_DIR: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/OGRE\n'}
+[0.848089] (rviz_imu_plugin) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[0.848289] (rviz_imu_plugin) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[0.848485] (rviz_imu_plugin) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[0.848682] (rviz_imu_plugin) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[0.858242] (imu_filter_madgwick) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.863583] (imu_complementary_filter) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.886116] (imu_complementary_filter) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.901584] (rviz_imu_plugin) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[0.902048] (-) TimerEvent: {}
+[0.910549] (rviz_imu_plugin) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   \n'}
+[0.973209] (imu_filter_madgwick) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.992344] (imu_filter_madgwick) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.002179] (-) TimerEvent: {}
+[1.071014] (imu_complementary_filter) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[1.101580] (rviz_imu_plugin) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[1.102272] (-) TimerEvent: {}
+[1.102844] (rviz_imu_plugin) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[1.147302] (imu_complementary_filter) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[1.199765] (imu_filter_madgwick) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[1.202393] (-) TimerEvent: {}
+[1.281623] (rviz_imu_plugin) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[1.282210] (rviz_imu_plugin) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[1.290640] (imu_filter_madgwick) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[1.302540] (-) TimerEvent: {}
+[1.403162] (-) TimerEvent: {}
+[1.465145] (rviz_imu_plugin) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[1.465822] (rviz_imu_plugin) StdoutLine: {'line': b'-- Looking for connect\n'}
+[1.473783] (imu_complementary_filter) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.503319] (-) TimerEvent: {}
+[1.604271] (-) TimerEvent: {}
+[1.675748] (imu_filter_madgwick) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.680886] (rviz_imu_plugin) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[1.681657] (rviz_imu_plugin) StdoutLine: {'line': b'-- Looking for remove\n'}
+[1.704433] (-) TimerEvent: {}
+[1.805138] (-) TimerEvent: {}
+[1.906059] (-) TimerEvent: {}
+[1.934501] (rviz_imu_plugin) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[1.935351] (rviz_imu_plugin) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[2.006224] (-) TimerEvent: {}
+[2.067330] (imu_complementary_filter) StdoutLine: {'line': b'-- Found message_filters: 3.2.7 (/opt/ros/foxy/share/message_filters/cmake)\n'}
+[2.087440] (imu_filter_madgwick) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[2.093357] (imu_complementary_filter) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[2.099436] (imu_filter_madgwick) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[2.104969] (imu_filter_madgwick) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.106385] (-) TimerEvent: {}
+[2.207319] (-) TimerEvent: {}
+[2.233256] (rviz_imu_plugin) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[2.234139] (rviz_imu_plugin) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[2.307562] (-) TimerEvent: {}
+[2.326793] (go2_rtabmap) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/xk/go2_slam_nav/build/go2_rtabmap/build', '--no-deps', 'symlink_data'], 'cwd': '/home/xk/go2_slam_nav/build/go2_rtabmap', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_AU:en', 'USER': 'xk', 'LC_TIME': 'en_AU.UTF-8', 'SSH_AGENT_PID': '4166', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib:', 'HOME': '/home/xk', 'CYCLONEDDS_URI': '<CycloneDDS><Domain><General><Interfaces>\n                            <NetworkInterface name="enp0s31f6" priority="default" multicast="default" />\n                        </Interfaces></General></Domain></CycloneDDS>', 'OLDPWD': '/home/xk', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'LC_MONETARY': 'en_AU.UTF-8', 'MANAGERPID': '4090', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/xk/unitree_ros2/cyclonedds_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'xk', 'JOURNAL_STREAM': '8:123580', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/x86_64-linux-gnu/pkgconfig:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/pkgconfig:/usr/local/lib/pkgconfig:', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/xk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/xk:@/tmp/.ICE-unix/4222,unix/xk:/tmp/.ICE-unix/4222', 'GDM_LANG': 'en_AU', 'INVOCATION_ID': '60b5be679248416cbb839d3f155696f7', 'PAPERSIZE': 'a4', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_AU.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/30b98a50_2d62_4195_8a05_42ab8fb7b3a1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_AU.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'en_AU.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/home/xk/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.364', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/xk', 'AMENT_PREFIX_PATH': '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'en_AU.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_AU.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'en_AU.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/xk/go2_slam_nav/build/go2_rtabmap', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/xk/go2_slam_nav/build/go2_rtabmap/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xk/go2_slam_nav/install/go2_rtabmap/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'en_AU.UTF-8', 'LC_PAPER': 'en_AU.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds'}, 'shell': False}
+[2.390780] (imu_complementary_filter) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[2.405146] (imu_complementary_filter) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[2.407747] (-) TimerEvent: {}
+[2.411502] (imu_complementary_filter) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.500276] (imu_filter_madgwick) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.501459] (imu_filter_madgwick) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.508071] (-) TimerEvent: {}
+[2.597156] (rviz_imu_plugin) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[2.608143] (-) TimerEvent: {}
+[2.618288] (rviz_imu_plugin) StdoutLine: {'line': b'-- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND\n'}
+[2.619247] (rviz_imu_plugin) StdoutLine: {'line': b'-- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND\n'}
+[2.652208] (rviz_imu_plugin) StdoutLine: {'line': b'-- library: libassimp.so.5\n'}
+[2.708371] (-) TimerEvent: {}
+[2.809607] (-) TimerEvent: {}
+[2.869888] (imu_complementary_filter) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.871564] (imu_complementary_filter) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.909840] (-) TimerEvent: {}
+[2.982914] (imu_filter_madgwick) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[2.984425] (imu_filter_madgwick) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[3.010067] (-) TimerEvent: {}
+[3.111415] (-) TimerEvent: {}
+[3.176170] (rviz_imu_plugin) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[3.211636] (-) TimerEvent: {}
+[3.274059] (my_unitree_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/xk/go2_slam_nav/build/my_unitree_controller/build', '--no-deps', 'symlink_data'], 'cwd': '/home/xk/go2_slam_nav/build/my_unitree_controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_AU:en', 'USER': 'xk', 'LC_TIME': 'en_AU.UTF-8', 'SSH_AGENT_PID': '4166', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib:', 'HOME': '/home/xk', 'CYCLONEDDS_URI': '<CycloneDDS><Domain><General><Interfaces>\n                            <NetworkInterface name="enp0s31f6" priority="default" multicast="default" />\n                        </Interfaces></General></Domain></CycloneDDS>', 'OLDPWD': '/home/xk', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'LC_MONETARY': 'en_AU.UTF-8', 'MANAGERPID': '4090', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/xk/unitree_ros2/cyclonedds_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'xk', 'JOURNAL_STREAM': '8:123580', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/x86_64-linux-gnu/pkgconfig:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/pkgconfig:/usr/local/lib/pkgconfig:', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/xk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/xk:@/tmp/.ICE-unix/4222,unix/xk:/tmp/.ICE-unix/4222', 'GDM_LANG': 'en_AU', 'INVOCATION_ID': '60b5be679248416cbb839d3f155696f7', 'PAPERSIZE': 'a4', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_AU.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/30b98a50_2d62_4195_8a05_42ab8fb7b3a1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_AU.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'en_AU.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/home/xk/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.364', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/xk', 'AMENT_PREFIX_PATH': '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'en_AU.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_AU.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'en_AU.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/xk/go2_slam_nav/build/my_unitree_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/xk/go2_slam_nav/build/my_unitree_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xk/go2_slam_nav/install/my_unitree_controller/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'en_AU.UTF-8', 'LC_PAPER': 'en_AU.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds'}, 'shell': False}
+[3.313159] (-) TimerEvent: {}
+[3.315433] (imu_complementary_filter) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[3.317176] (imu_complementary_filter) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[3.376052] (imu_filter_madgwick) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[3.377394] (imu_filter_madgwick) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[3.413623] (-) TimerEvent: {}
+[3.493634] (rviz_imu_plugin) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.513955] (-) TimerEvent: {}
+[3.573178] (rviz_imu_plugin) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[3.614210] (-) TimerEvent: {}
+[3.716058] (-) TimerEvent: {}
+[3.801830] (imu_filter_madgwick) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[3.811227] (go2_nav2) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/xk/go2_slam_nav/build/go2_nav2/build', '--no-deps', 'symlink_data'], 'cwd': '/home/xk/go2_slam_nav/build/go2_nav2', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_AU:en', 'USER': 'xk', 'LC_TIME': 'en_AU.UTF-8', 'SSH_AGENT_PID': '4166', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib:', 'HOME': '/home/xk', 'CYCLONEDDS_URI': '<CycloneDDS><Domain><General><Interfaces>\n                            <NetworkInterface name="enp0s31f6" priority="default" multicast="default" />\n                        </Interfaces></General></Domain></CycloneDDS>', 'OLDPWD': '/home/xk', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'LC_MONETARY': 'en_AU.UTF-8', 'MANAGERPID': '4090', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/xk/unitree_ros2/cyclonedds_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'xk', 'JOURNAL_STREAM': '8:123580', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/x86_64-linux-gnu/pkgconfig:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/pkgconfig:/usr/local/lib/pkgconfig:', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/xk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/xk:@/tmp/.ICE-unix/4222,unix/xk:/tmp/.ICE-unix/4222', 'GDM_LANG': 'en_AU', 'INVOCATION_ID': '60b5be679248416cbb839d3f155696f7', 'PAPERSIZE': 'a4', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_AU.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/30b98a50_2d62_4195_8a05_42ab8fb7b3a1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_AU.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'en_AU.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/home/xk/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.364', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/xk', 'AMENT_PREFIX_PATH': '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'en_AU.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_AU.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'en_AU.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/xk/go2_slam_nav/build/go2_nav2', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/xk/go2_slam_nav/build/go2_nav2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xk/go2_slam_nav/install/go2_nav2/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'en_AU.UTF-8', 'LC_PAPER': 'en_AU.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds'}, 'shell': False}
+[3.835380] (-) TimerEvent: {}
+[3.839780] (imu_filter_madgwick) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.884064] (imu_complementary_filter) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[3.885507] (imu_complementary_filter) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[3.935582] (-) TimerEvent: {}
+[4.037071] (-) TimerEvent: {}
+[4.138996] (-) TimerEvent: {}
+[4.240360] (-) TimerEvent: {}
+[4.315066] (rviz_imu_plugin) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[4.340580] (-) TimerEvent: {}
+[4.431690] (go2_rtabmap) StdoutLine: {'line': b'running develop\n'}
+[4.440828] (-) TimerEvent: {}
+[4.459242] (imu_complementary_filter) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[4.467271] (imu_complementary_filter) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.528006] (rviz_imu_plugin) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[4.541087] (-) TimerEvent: {}
+[4.652106] (-) TimerEvent: {}
+[4.753326] (-) TimerEvent: {}
+[4.854974] (-) TimerEvent: {}
+[4.956303] (-) TimerEvent: {}
+[5.026764] (my_unitree_controller) StdoutLine: {'line': b'running develop\n'}
+[5.056521] (-) TimerEvent: {}
+[5.158103] (-) TimerEvent: {}
+[5.259998] (-) TimerEvent: {}
+[5.261460] (rviz_imu_plugin) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.306011] (imu_filter_madgwick) StdoutLine: {'line': b'-- Found rclcpp_components: 2.4.3 (/opt/ros/foxy/share/rclcpp_components/cmake)\n'}
+[5.360141] (-) TimerEvent: {}
+[5.461677] (-) TimerEvent: {}
+[5.563255] (-) TimerEvent: {}
+[5.581976] (imu_complementary_filter) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[5.663548] (-) TimerEvent: {}
+[5.765799] (-) TimerEvent: {}
+[5.772249] (go2_rtabmap) StdoutLine: {'line': b'running egg_info\n'}
+[5.773589] (go2_rtabmap) StdoutLine: {'line': b'creating go2_rtabmap.egg-info\n'}
+[5.774806] (go2_rtabmap) StdoutLine: {'line': b'writing go2_rtabmap.egg-info/PKG-INFO\n'}
+[5.776032] (go2_rtabmap) StdoutLine: {'line': b'writing dependency_links to go2_rtabmap.egg-info/dependency_links.txt\n'}
+[5.777387] (go2_rtabmap) StdoutLine: {'line': b'writing entry points to go2_rtabmap.egg-info/entry_points.txt\n'}
+[5.778226] (go2_rtabmap) StdoutLine: {'line': b'writing requirements to go2_rtabmap.egg-info/requires.txt\n'}
+[5.779382] (go2_rtabmap) StdoutLine: {'line': b'writing top-level names to go2_rtabmap.egg-info/top_level.txt\n'}
+[5.785009] (go2_rtabmap) StdoutLine: {'line': b"writing manifest file 'go2_rtabmap.egg-info/SOURCES.txt'\n"}
+[5.866045] (-) TimerEvent: {}
+[5.899226] (my_unitree_controller) StdoutLine: {'line': b'running egg_info\n'}
+[5.900828] (imu_filter_madgwick) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[5.901628] (my_unitree_controller) StdoutLine: {'line': b'creating my_unitree_controller.egg-info\n'}
+[5.902402] (my_unitree_controller) StdoutLine: {'line': b'writing my_unitree_controller.egg-info/PKG-INFO\n'}
+[5.903570] (my_unitree_controller) StdoutLine: {'line': b'writing dependency_links to my_unitree_controller.egg-info/dependency_links.txt\n'}
+[5.904300] (my_unitree_controller) StdoutLine: {'line': b'writing entry points to my_unitree_controller.egg-info/entry_points.txt\n'}
+[5.904879] (my_unitree_controller) StdoutLine: {'line': b'writing requirements to my_unitree_controller.egg-info/requires.txt\n'}
+[5.905439] (my_unitree_controller) StdoutLine: {'line': b'writing top-level names to my_unitree_controller.egg-info/top_level.txt\n'}
+[5.909593] (my_unitree_controller) StdoutLine: {'line': b"writing manifest file 'my_unitree_controller.egg-info/SOURCES.txt'\n"}
+[5.966253] (-) TimerEvent: {}
+[5.989053] (go2_nav2) StdoutLine: {'line': b'running develop\n'}
+[6.062496] (go2_rtabmap) StdoutLine: {'line': b"reading manifest file 'go2_rtabmap.egg-info/SOURCES.txt'\n"}
+[6.063906] (imu_complementary_filter) StdoutLine: {'line': b'-- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)\n'}
+[6.066456] (-) TimerEvent: {}
+[6.067856] (go2_rtabmap) StdoutLine: {'line': b"writing manifest file 'go2_rtabmap.egg-info/SOURCES.txt'\n"}
+[6.079838] (my_unitree_controller) StdoutLine: {'line': b"reading manifest file 'my_unitree_controller.egg-info/SOURCES.txt'\n"}
+[6.083351] (my_unitree_controller) StdoutLine: {'line': b"writing manifest file 'my_unitree_controller.egg-info/SOURCES.txt'\n"}
+[6.139798] (imu_complementary_filter) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[6.166687] (-) TimerEvent: {}
+[6.245470] (imu_filter_madgwick) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)\n'}
+[6.266909] (-) TimerEvent: {}
+[6.272346] (my_unitree_controller) StdoutLine: {'line': b'running build_ext\n'}
+[6.273765] (my_unitree_controller) StdoutLine: {'line': b'Creating /home/xk/go2_slam_nav/install/my_unitree_controller/lib/python3.8/site-packages/site.py\n'}
+[6.284259] (my_unitree_controller) StdoutLine: {'line': b'Creating /home/xk/go2_slam_nav/install/my_unitree_controller/lib/python3.8/site-packages/my-unitree-controller.egg-link (link to .)\n'}
+[6.287728] (my_unitree_controller) StdoutLine: {'line': b'Installing sport_controller script to /home/xk/go2_slam_nav/install/my_unitree_controller/lib/my_unitree_controller\n'}
+[6.289027] (my_unitree_controller) StdoutLine: {'line': b'\n'}
+[6.289785] (my_unitree_controller) StdoutLine: {'line': b'Installed /home/xk/go2_slam_nav/build/my_unitree_controller\n'}
+[6.290733] (my_unitree_controller) StdoutLine: {'line': b'running symlink_data\n'}
+[6.291989] (my_unitree_controller) StdoutLine: {'line': b'creating /home/xk/go2_slam_nav/install/my_unitree_controller/share/ament_index\n'}
+[6.292729] (my_unitree_controller) StdoutLine: {'line': b'creating /home/xk/go2_slam_nav/install/my_unitree_controller/share/ament_index/resource_index\n'}
+[6.293374] (my_unitree_controller) StdoutLine: {'line': b'creating /home/xk/go2_slam_nav/install/my_unitree_controller/share/ament_index/resource_index/packages\n'}
+[6.294015] (my_unitree_controller) StdoutLine: {'line': b'symbolically linking /home/xk/go2_slam_nav/build/my_unitree_controller/resource/my_unitree_controller -> /home/xk/go2_slam_nav/install/my_unitree_controller/share/ament_index/resource_index/packages\n'}
+[6.294687] (my_unitree_controller) StdoutLine: {'line': b'symbolically linking /home/xk/go2_slam_nav/build/my_unitree_controller/package.xml -> /home/xk/go2_slam_nav/install/my_unitree_controller/share/my_unitree_controller\n'}
+[6.329508] (imu_filter_madgwick) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)\n'}
+[6.355673] (imu_filter_madgwick) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.3.7") \n'}
+[6.363306] (go2_rtabmap) StdoutLine: {'line': b'running build_ext\n'}
+[6.367294] (-) TimerEvent: {}
+[6.372305] (go2_rtabmap) StdoutLine: {'line': b'Creating /home/xk/go2_slam_nav/install/go2_rtabmap/lib/python3.8/site-packages/site.py\n'}
+[6.385534] (go2_rtabmap) StdoutLine: {'line': b'Creating /home/xk/go2_slam_nav/install/go2_rtabmap/lib/python3.8/site-packages/go2-rtabmap.egg-link (link to .)\n'}
+[6.391958] (go2_rtabmap) StdoutLine: {'line': b'\n'}
+[6.392903] (go2_rtabmap) StdoutLine: {'line': b'Installed /home/xk/go2_slam_nav/build/go2_rtabmap\n'}
+[6.394089] (go2_rtabmap) StdoutLine: {'line': b'running symlink_data\n'}
+[6.396527] (go2_rtabmap) StdoutLine: {'line': b'creating /home/xk/go2_slam_nav/install/go2_rtabmap/share/ament_index\n'}
+[6.397747] (go2_rtabmap) StdoutLine: {'line': b'creating /home/xk/go2_slam_nav/install/go2_rtabmap/share/ament_index/resource_index\n'}
+[6.398878] (go2_rtabmap) StdoutLine: {'line': b'creating /home/xk/go2_slam_nav/install/go2_rtabmap/share/ament_index/resource_index/packages\n'}
+[6.400015] (go2_rtabmap) StdoutLine: {'line': b'symbolically linking /home/xk/go2_slam_nav/build/go2_rtabmap/resource/go2_rtabmap -> /home/xk/go2_slam_nav/install/go2_rtabmap/share/ament_index/resource_index/packages\n'}
+[6.401000] (go2_rtabmap) StdoutLine: {'line': b'symbolically linking /home/xk/go2_slam_nav/build/go2_rtabmap/package.xml -> /home/xk/go2_slam_nav/install/go2_rtabmap/share/go2_rtabmap\n'}
+[6.401685] (go2_rtabmap) StdoutLine: {'line': b'creating /home/xk/go2_slam_nav/install/go2_rtabmap/share/go2_rtabmap/launch\n'}
+[6.402351] (go2_rtabmap) StdoutLine: {'line': b'symbolically linking /home/xk/go2_slam_nav/build/go2_rtabmap/launch/mapping.launch.py -> /home/xk/go2_slam_nav/install/go2_rtabmap/share/go2_rtabmap/launch\n'}
+[6.403061] (go2_rtabmap) StdoutLine: {'line': b'symbolically linking /home/xk/go2_slam_nav/build/go2_rtabmap/launch/camera_mapping.launch.py -> /home/xk/go2_slam_nav/install/go2_rtabmap/share/go2_rtabmap/launch\n'}
+[6.403724] (go2_rtabmap) StdoutLine: {'line': b'symbolically linking /home/xk/go2_slam_nav/build/go2_rtabmap/launch/rtabmap_lidar.launch.py -> /home/xk/go2_slam_nav/install/go2_rtabmap/share/go2_rtabmap/launch\n'}
+[6.404415] (go2_rtabmap) StdoutLine: {'line': b'symbolically linking /home/xk/go2_slam_nav/build/go2_rtabmap/launch/rtabmap_camera.launch.py -> /home/xk/go2_slam_nav/install/go2_rtabmap/share/go2_rtabmap/launch\n'}
+[6.433328] (my_unitree_controller) CommandEnded: {'returncode': 0}
+[6.468282] (-) TimerEvent: {}
+[6.508222] (my_unitree_controller) JobEnded: {'identifier': 'my_unitree_controller', 'rc': 0}
+[6.568503] (-) TimerEvent: {}
+[6.574703] (go2_rtabmap) CommandEnded: {'returncode': 0}
+[6.632546] (go2_rtabmap) JobEnded: {'identifier': 'go2_rtabmap', 'rc': 0}
+[6.668695] (-) TimerEvent: {}
+[6.722287] (rviz_imu_plugin) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[6.731696] (rviz_imu_plugin) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[6.736228] (rviz_imu_plugin) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[6.768913] (-) TimerEvent: {}
+[6.869976] (-) TimerEvent: {}
+[6.970781] (go2_nav2) StdoutLine: {'line': b'running egg_info\n'}
+[6.971684] (-) TimerEvent: {}
+[6.972526] (go2_nav2) StdoutLine: {'line': b'creating go2_nav2.egg-info\n'}
+[6.973965] (go2_nav2) StdoutLine: {'line': b'writing go2_nav2.egg-info/PKG-INFO\n'}
+[6.974673] (go2_nav2) StdoutLine: {'line': b'writing dependency_links to go2_nav2.egg-info/dependency_links.txt\n'}
+[6.975353] (go2_nav2) StdoutLine: {'line': b'writing entry points to go2_nav2.egg-info/entry_points.txt\n'}
+[6.976067] (go2_nav2) StdoutLine: {'line': b'writing requirements to go2_nav2.egg-info/requires.txt\n'}
+[6.977002] (go2_nav2) StdoutLine: {'line': b'writing top-level names to go2_nav2.egg-info/top_level.txt\n'}
+[6.979389] (go2_nav2) StdoutLine: {'line': b"writing manifest file 'go2_nav2.egg-info/SOURCES.txt'\n"}
+[7.051523] (rviz_imu_plugin) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.052813] (rviz_imu_plugin) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.071886] (-) TimerEvent: {}
+[7.128054] (go2_nav2) StdoutLine: {'line': b"reading manifest file 'go2_nav2.egg-info/SOURCES.txt'\n"}
+[7.130691] (go2_nav2) StdoutLine: {'line': b"writing manifest file 'go2_nav2.egg-info/SOURCES.txt'\n"}
+[7.172085] (-) TimerEvent: {}
+[7.272987] (-) TimerEvent: {}
+[7.282059] (go2_nav2) StdoutLine: {'line': b'running build_ext\n'}
+[7.283187] (go2_nav2) StdoutLine: {'line': b'Creating /home/xk/go2_slam_nav/install/go2_nav2/lib/python3.8/site-packages/site.py\n'}
+[7.291598] (go2_nav2) StdoutLine: {'line': b'Creating /home/xk/go2_slam_nav/install/go2_nav2/lib/python3.8/site-packages/go2-nav2.egg-link (link to .)\n'}
+[7.294627] (go2_nav2) StdoutLine: {'line': b'\n'}
+[7.295776] (go2_nav2) StdoutLine: {'line': b'Installed /home/xk/go2_slam_nav/build/go2_nav2\n'}
+[7.296425] (go2_nav2) StdoutLine: {'line': b'running symlink_data\n'}
+[7.297009] (go2_nav2) StdoutLine: {'line': b'creating /home/xk/go2_slam_nav/install/go2_nav2/share/ament_index\n'}
+[7.297589] (go2_nav2) StdoutLine: {'line': b'creating /home/xk/go2_slam_nav/install/go2_nav2/share/ament_index/resource_index\n'}
+[7.298516] (go2_nav2) StdoutLine: {'line': b'creating /home/xk/go2_slam_nav/install/go2_nav2/share/ament_index/resource_index/packages\n'}
+[7.299063] (go2_nav2) StdoutLine: {'line': b'symbolically linking /home/xk/go2_slam_nav/build/go2_nav2/resource/go2_nav2 -> /home/xk/go2_slam_nav/install/go2_nav2/share/ament_index/resource_index/packages\n'}
+[7.299605] (go2_nav2) StdoutLine: {'line': b'symbolically linking /home/xk/go2_slam_nav/build/go2_nav2/package.xml -> /home/xk/go2_slam_nav/install/go2_nav2/share/go2_nav2\n'}
+[7.300236] (go2_nav2) StdoutLine: {'line': b'creating /home/xk/go2_slam_nav/install/go2_nav2/share/go2_nav2/launch\n'}
+[7.300789] (go2_nav2) StdoutLine: {'line': b'symbolically linking /home/xk/go2_slam_nav/build/go2_nav2/launch/bringup.launch.py -> /home/xk/go2_slam_nav/install/go2_nav2/share/go2_nav2/launch\n'}
+[7.353398] (rviz_imu_plugin) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[7.355006] (rviz_imu_plugin) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[7.373229] (-) TimerEvent: {}
+[7.398682] (go2_nav2) CommandEnded: {'returncode': 0}
+[7.439281] (go2_nav2) JobEnded: {'identifier': 'go2_nav2', 'rc': 0}
+[7.473431] (-) TimerEvent: {}
+[7.574362] (-) TimerEvent: {}
+[7.640623] (rviz_imu_plugin) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[7.641735] (rviz_imu_plugin) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[7.674574] (-) TimerEvent: {}
+[7.775564] (-) TimerEvent: {}
+[7.876480] (-) TimerEvent: {}
+[7.924421] (rviz_imu_plugin) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[7.928898] (rviz_imu_plugin) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[7.976655] (-) TimerEvent: {}
+[8.077524] (-) TimerEvent: {}
+[8.178405] (-) TimerEvent: {}
+[8.185923] (imu_filter_madgwick) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[8.278572] (-) TimerEvent: {}
+[8.379337] (-) TimerEvent: {}
+[8.480300] (-) TimerEvent: {}
+[8.502001] (imu_complementary_filter) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.507492] (imu_filter_madgwick) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 0.9.12 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)\n'}
+[8.522477] (imu_filter_madgwick) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[8.529706] (imu_filter_madgwick) StdoutLine: {'line': b'-- Check if compiler accepts -pthread\n'}
+[8.561813] (imu_complementary_filter) StdoutLine: {'line': b'-- Generating done\n'}
+[8.580391] (-) TimerEvent: {}
+[8.585532] (imu_complementary_filter) StdoutLine: {'line': b'-- Build files have been written to: /home/xk/go2_slam_nav/build/imu_complementary_filter\n'}
+[8.612727] (imu_complementary_filter) CommandEnded: {'returncode': 0}
+[8.615216] (imu_complementary_filter) JobProgress: {'identifier': 'imu_complementary_filter', 'progress': 'build'}
+[8.622337] (imu_complementary_filter) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xk/go2_slam_nav/build/imu_complementary_filter', '--', '-j8', '-l8'], 'cwd': '/home/xk/go2_slam_nav/build/imu_complementary_filter', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'xk'), ('LC_TIME', 'en_AU.UTF-8'), ('SSH_AGENT_PID', '4166'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib:'), ('HOME', '/home/xk'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces>\n                            <NetworkInterface name="enp0s31f6" priority="default" multicast="default" />\n                        </Interfaces></General></Domain></CycloneDDS>'), ('OLDPWD', '/home/xk'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'en_AU.UTF-8'), ('MANAGERPID', '4090'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'xk'), ('JOURNAL_STREAM', '8:123580'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/x86_64-linux-gnu/pkgconfig:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/xk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/xk:@/tmp/.ICE-unix/4222,unix/xk:/tmp/.ICE-unix/4222'), ('GDM_LANG', 'en_AU'), ('INVOCATION_ID', '60b5be679248416cbb839d3f155696f7'), ('PAPERSIZE', 'a4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_AU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/30b98a50_2d62_4195_8a05_42ab8fb7b3a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_AU.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/xk/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.364'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/xk'), ('AMENT_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_AU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_AU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_AU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xk/go2_slam_nav/build/imu_complementary_filter'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_AU.UTF-8'), ('LC_PAPER', 'en_AU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[8.680622] (-) TimerEvent: {}
+[8.773623] (imu_complementary_filter) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target complementary_filter\x1b[0m\n'}
+[8.780760] (-) TimerEvent: {}
+[8.786035] (imu_filter_madgwick) StdoutLine: {'line': b'-- Check if compiler accepts -pthread - yes\n'}
+[8.880919] (-) TimerEvent: {}
+[8.908683] (imu_complementary_filter) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/complementary_filter.dir/src/complementary_filter.cpp.o\x1b[0m\n'}
+[8.930332] (imu_complementary_filter) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/complementary_filter.dir/src/complementary_filter_ros.cpp.o\x1b[0m\n'}
+[8.981080] (-) TimerEvent: {}
+[9.031474] (rviz_imu_plugin) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.3.7") \n'}
+[9.066323] (imu_filter_madgwick) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.081262] (-) TimerEvent: {}
+[9.181999] (-) TimerEvent: {}
+[9.213257] (imu_filter_madgwick) StdoutLine: {'line': b'-- Generating done\n'}
+[9.265027] (imu_filter_madgwick) StdoutLine: {'line': b'-- Build files have been written to: /home/xk/go2_slam_nav/build/imu_filter_madgwick\n'}
+[9.282189] (-) TimerEvent: {}
+[9.295362] (imu_filter_madgwick) CommandEnded: {'returncode': 0}
+[9.298256] (imu_filter_madgwick) JobProgress: {'identifier': 'imu_filter_madgwick', 'progress': 'build'}
+[9.305827] (imu_filter_madgwick) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xk/go2_slam_nav/build/imu_filter_madgwick', '--', '-j8', '-l8'], 'cwd': '/home/xk/go2_slam_nav/build/imu_filter_madgwick', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'xk'), ('LC_TIME', 'en_AU.UTF-8'), ('SSH_AGENT_PID', '4166'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib:'), ('HOME', '/home/xk'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces>\n                            <NetworkInterface name="enp0s31f6" priority="default" multicast="default" />\n                        </Interfaces></General></Domain></CycloneDDS>'), ('OLDPWD', '/home/xk'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'en_AU.UTF-8'), ('MANAGERPID', '4090'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'xk'), ('JOURNAL_STREAM', '8:123580'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/x86_64-linux-gnu/pkgconfig:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/xk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/xk:@/tmp/.ICE-unix/4222,unix/xk:/tmp/.ICE-unix/4222'), ('GDM_LANG', 'en_AU'), ('INVOCATION_ID', '60b5be679248416cbb839d3f155696f7'), ('PAPERSIZE', 'a4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_AU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/30b98a50_2d62_4195_8a05_42ab8fb7b3a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_AU.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/xk/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.364'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/xk'), ('AMENT_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_AU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_AU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_AU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xk/go2_slam_nav/build/imu_filter_madgwick'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_AU.UTF-8'), ('LC_PAPER', 'en_AU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[9.382420] (-) TimerEvent: {}
+[9.473351] (imu_filter_madgwick) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target imu_filter_madgwick\x1b[0m\n'}
+[9.475252] (imu_filter_madgwick) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest\x1b[0m\n'}
+[9.476306] (imu_filter_madgwick) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest_main\x1b[0m\n'}
+[9.482707] (-) TimerEvent: {}
+[9.566844] (imu_filter_madgwick) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[9.578980] (imu_filter_madgwick) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[9.582782] (-) TimerEvent: {}
+[9.676456] (imu_filter_madgwick) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/imu_filter_madgwick.dir/src/imu_filter.cpp.o\x1b[0m\n'}
+[9.682967] (-) TimerEvent: {}
+[9.690934] (imu_filter_madgwick) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/imu_filter_madgwick.dir/src/imu_filter_ros.cpp.o\x1b[0m\n'}
+[9.715262] (imu_filter_madgwick) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/imu_filter_madgwick.dir/src/stateless_orientation.cpp.o\x1b[0m\n'}
+[9.783160] (-) TimerEvent: {}
+[9.884051] (-) TimerEvent: {}
+[9.984985] (-) TimerEvent: {}
+[10.085945] (-) TimerEvent: {}
+[10.186882] (-) TimerEvent: {}
+[10.287836] (-) TimerEvent: {}
+[10.388941] (-) TimerEvent: {}
+[10.489894] (-) TimerEvent: {}
+[10.591207] (-) TimerEvent: {}
+[10.692533] (-) TimerEvent: {}
+[10.793843] (-) TimerEvent: {}
+[10.895172] (-) TimerEvent: {}
+[10.996544] (-) TimerEvent: {}
+[11.097895] (-) TimerEvent: {}
+[11.199212] (-) TimerEvent: {}
+[11.300596] (-) TimerEvent: {}
+[11.401644] (-) TimerEvent: {}
+[11.502660] (-) TimerEvent: {}
+[11.603818] (-) TimerEvent: {}
+[11.704859] (-) TimerEvent: {}
+[11.805777] (-) TimerEvent: {}
+[11.907063] (-) TimerEvent: {}
+[11.942835] (rviz_imu_plugin) StdoutLine: {'line': b"-- Setting yaml-cpp_DIR to: '/opt/ros/foxy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'\n"}
+[12.007262] (-) TimerEvent: {}
+[12.108543] (-) TimerEvent: {}
+[12.210052] (-) TimerEvent: {}
+[12.311088] (-) TimerEvent: {}
+[12.406647] (rviz_imu_plugin) StdoutLine: {'line': b'-- Configuring done\n'}
+[12.411281] (-) TimerEvent: {}
+[12.512860] (-) TimerEvent: {}
+[12.569176] (rviz_imu_plugin) StdoutLine: {'line': b'-- Generating done\n'}
+[12.611724] (rviz_imu_plugin) StdoutLine: {'line': b'-- Build files have been written to: /home/xk/go2_slam_nav/build/rviz_imu_plugin\n'}
+[12.612983] (-) TimerEvent: {}
+[12.663453] (rviz_imu_plugin) CommandEnded: {'returncode': 0}
+[12.679667] (rviz_imu_plugin) JobProgress: {'identifier': 'rviz_imu_plugin', 'progress': 'build'}
+[12.679937] (rviz_imu_plugin) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xk/go2_slam_nav/build/rviz_imu_plugin', '--', '-j8', '-l8'], 'cwd': '/home/xk/go2_slam_nav/build/rviz_imu_plugin', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'xk'), ('LC_TIME', 'en_AU.UTF-8'), ('SSH_AGENT_PID', '4166'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib:'), ('HOME', '/home/xk'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces>\n                            <NetworkInterface name="enp0s31f6" priority="default" multicast="default" />\n                        </Interfaces></General></Domain></CycloneDDS>'), ('OLDPWD', '/home/xk'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'en_AU.UTF-8'), ('MANAGERPID', '4090'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'xk'), ('JOURNAL_STREAM', '8:123580'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/x86_64-linux-gnu/pkgconfig:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/xk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/xk:@/tmp/.ICE-unix/4222,unix/xk:/tmp/.ICE-unix/4222'), ('GDM_LANG', 'en_AU'), ('INVOCATION_ID', '60b5be679248416cbb839d3f155696f7'), ('PAPERSIZE', 'a4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_AU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/30b98a50_2d62_4195_8a05_42ab8fb7b3a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_AU.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/xk/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.364'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/xk'), ('AMENT_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_AU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_AU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_AU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xk/go2_slam_nav/build/rviz_imu_plugin'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_AU.UTF-8'), ('LC_PAPER', 'en_AU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[12.713235] (-) TimerEvent: {}
+[12.783101] (imu_filter_madgwick) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[12.813457] (-) TimerEvent: {}
+[12.914754] (-) TimerEvent: {}
+[12.920857] (imu_filter_madgwick) StdoutLine: {'line': b'[ 42%] Built target gtest_main\n'}
+[12.949050] (rviz_imu_plugin) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target rviz_imu_plugin_autogen\x1b[0m\n'}
+[12.991836] (rviz_imu_plugin) StdoutLine: {'line': b'[ 11%] \x1b[34m\x1b[1mAutomatic MOC for target rviz_imu_plugin\x1b[0m\n'}
+[13.014973] (-) TimerEvent: {}
+[13.115954] (-) TimerEvent: {}
+[13.217257] (-) TimerEvent: {}
+[13.318516] (-) TimerEvent: {}
+[13.419824] (-) TimerEvent: {}
+[13.521154] (-) TimerEvent: {}
+[13.622465] (-) TimerEvent: {}
+[13.723748] (-) TimerEvent: {}
+[13.825112] (-) TimerEvent: {}
+[13.926334] (-) TimerEvent: {}
+[14.027011] (-) TimerEvent: {}
+[14.127855] (-) TimerEvent: {}
+[14.200413] (rviz_imu_plugin) StdoutLine: {'line': b'[ 11%] Built target rviz_imu_plugin_autogen\n'}
+[14.228069] (-) TimerEvent: {}
+[14.239013] (rviz_imu_plugin) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target rviz_imu_plugin\x1b[0m\n'}
+[14.328251] (-) TimerEvent: {}
+[14.429055] (-) TimerEvent: {}
+[14.530246] (-) TimerEvent: {}
+[14.631130] (-) TimerEvent: {}
+[14.673464] (rviz_imu_plugin) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.o\x1b[0m\n'}
+[14.675597] (rviz_imu_plugin) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.o\x1b[0m\n'}
+[14.677843] (rviz_imu_plugin) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.o\x1b[0m\n'}
+[14.694042] (rviz_imu_plugin) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[14.731116] (rviz_imu_plugin) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.o\x1b[0m\n'}
+[14.732241] (-) TimerEvent: {}
+[14.736608] (rviz_imu_plugin) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.o\x1b[0m\n'}
+[14.737707] (rviz_imu_plugin) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.o\x1b[0m\n'}
+[14.832462] (-) TimerEvent: {}
+[14.933823] (-) TimerEvent: {}
+[15.035113] (-) TimerEvent: {}
+[15.139548] (-) TimerEvent: {}
+[15.240911] (-) TimerEvent: {}
+[15.342265] (-) TimerEvent: {}
+[15.443617] (-) TimerEvent: {}
+[15.544999] (-) TimerEvent: {}
+[15.646369] (-) TimerEvent: {}
+[15.747394] (-) TimerEvent: {}
+[15.848426] (-) TimerEvent: {}
+[15.949761] (-) TimerEvent: {}
+[16.051134] (-) TimerEvent: {}
+[16.152510] (-) TimerEvent: {}
+[16.253817] (-) TimerEvent: {}
+[16.354885] (-) TimerEvent: {}
+[16.456310] (-) TimerEvent: {}
+[16.557665] (-) TimerEvent: {}
+[16.659049] (-) TimerEvent: {}
+[16.760103] (-) TimerEvent: {}
+[16.861138] (-) TimerEvent: {}
+[16.962151] (-) TimerEvent: {}
+[17.063163] (-) TimerEvent: {}
+[17.164193] (-) TimerEvent: {}
+[17.265244] (-) TimerEvent: {}
+[17.366242] (-) TimerEvent: {}
+[17.467204] (-) TimerEvent: {}
+[17.568159] (-) TimerEvent: {}
+[17.669058] (-) TimerEvent: {}
+[17.769996] (-) TimerEvent: {}
+[17.871008] (-) TimerEvent: {}
+[17.972093] (-) TimerEvent: {}
+[18.073476] (-) TimerEvent: {}
+[18.174841] (-) TimerEvent: {}
+[18.276276] (-) TimerEvent: {}
+[18.377655] (-) TimerEvent: {}
+[18.479057] (-) TimerEvent: {}
+[18.580515] (-) TimerEvent: {}
+[18.682788] (-) TimerEvent: {}
+[18.784213] (-) TimerEvent: {}
+[18.885566] (-) TimerEvent: {}
+[18.986905] (-) TimerEvent: {}
+[19.087874] (-) TimerEvent: {}
+[19.188801] (-) TimerEvent: {}
+[19.289688] (-) TimerEvent: {}
+[19.390675] (-) TimerEvent: {}
+[19.491674] (-) TimerEvent: {}
+[19.592747] (-) TimerEvent: {}
+[19.693717] (-) TimerEvent: {}
+[19.794707] (-) TimerEvent: {}
+[19.895698] (-) TimerEvent: {}
+[19.996743] (-) TimerEvent: {}
+[20.097762] (-) TimerEvent: {}
+[20.198758] (-) TimerEvent: {}
+[20.299772] (-) TimerEvent: {}
+[20.400812] (-) TimerEvent: {}
+[20.501826] (-) TimerEvent: {}
+[20.602830] (-) TimerEvent: {}
+[20.703806] (-) TimerEvent: {}
+[20.804836] (-) TimerEvent: {}
+[20.905861] (-) TimerEvent: {}
+[21.006841] (-) TimerEvent: {}
+[21.107827] (-) TimerEvent: {}
+[21.208859] (-) TimerEvent: {}
+[21.310258] (-) TimerEvent: {}
+[21.411312] (-) TimerEvent: {}
+[21.512393] (-) TimerEvent: {}
+[21.613748] (-) TimerEvent: {}
+[21.714958] (-) TimerEvent: {}
+[21.815843] (-) TimerEvent: {}
+[21.916761] (-) TimerEvent: {}
+[22.017650] (-) TimerEvent: {}
+[22.118648] (-) TimerEvent: {}
+[22.219681] (-) TimerEvent: {}
+[22.320676] (-) TimerEvent: {}
+[22.421708] (-) TimerEvent: {}
+[22.522713] (-) TimerEvent: {}
+[22.623710] (-) TimerEvent: {}
+[22.724717] (-) TimerEvent: {}
+[22.825696] (-) TimerEvent: {}
+[22.926831] (-) TimerEvent: {}
+[23.027858] (-) TimerEvent: {}
+[23.128847] (-) TimerEvent: {}
+[23.229807] (-) TimerEvent: {}
+[23.330772] (-) TimerEvent: {}
+[23.431731] (-) TimerEvent: {}
+[23.532748] (-) TimerEvent: {}
+[23.634151] (-) TimerEvent: {}
+[23.735158] (-) TimerEvent: {}
+[23.836639] (-) TimerEvent: {}
+[23.937662] (-) TimerEvent: {}
+[24.039131] (-) TimerEvent: {}
+[24.140177] (-) TimerEvent: {}
+[24.241639] (-) TimerEvent: {}
+[24.342693] (-) TimerEvent: {}
+[24.444057] (-) TimerEvent: {}
+[24.544963] (-) TimerEvent: {}
+[24.645884] (-) TimerEvent: {}
+[24.746834] (-) TimerEvent: {}
+[24.847883] (-) TimerEvent: {}
+[24.948969] (-) TimerEvent: {}
+[25.057409] (-) TimerEvent: {}
+[25.159278] (-) TimerEvent: {}
+[25.260639] (-) TimerEvent: {}
+[25.362115] (-) TimerEvent: {}
+[25.463640] (-) TimerEvent: {}
+[25.565028] (-) TimerEvent: {}
+[25.666479] (-) TimerEvent: {}
+[25.767610] (-) TimerEvent: {}
+[25.868692] (-) TimerEvent: {}
+[25.969739] (-) TimerEvent: {}
+[26.070935] (-) TimerEvent: {}
+[26.172136] (-) TimerEvent: {}
+[26.289124] (-) TimerEvent: {}
+[26.412167] (-) TimerEvent: {}
+[26.520238] (-) TimerEvent: {}
+[26.627390] (-) TimerEvent: {}
+[26.728943] (-) TimerEvent: {}
+[26.847132] (-) TimerEvent: {}
+[26.949269] (-) TimerEvent: {}
+[27.050431] (-) TimerEvent: {}
+[27.151600] (-) TimerEvent: {}
+[27.252816] (-) TimerEvent: {}
+[27.358128] (-) TimerEvent: {}
+[27.459255] (-) TimerEvent: {}
+[27.560467] (-) TimerEvent: {}
+[27.661557] (-) TimerEvent: {}
+[27.762806] (-) TimerEvent: {}
+[27.864109] (-) TimerEvent: {}
+[27.965718] (-) TimerEvent: {}
+[28.067295] (-) TimerEvent: {}
+[28.168697] (-) TimerEvent: {}
+[28.269962] (-) TimerEvent: {}
+[28.370958] (-) TimerEvent: {}
+[28.472361] (-) TimerEvent: {}
+[28.573764] (-) TimerEvent: {}
+[28.675140] (-) TimerEvent: {}
+[28.776194] (-) TimerEvent: {}
+[28.877154] (-) TimerEvent: {}
+[28.978182] (-) TimerEvent: {}
+[29.079786] (-) TimerEvent: {}
+[29.181039] (-) TimerEvent: {}
+[29.284111] (-) TimerEvent: {}
+[29.385274] (-) TimerEvent: {}
+[29.486624] (-) TimerEvent: {}
+[29.588262] (-) TimerEvent: {}
+[29.689423] (-) TimerEvent: {}
+[29.790642] (-) TimerEvent: {}
+[29.891867] (-) TimerEvent: {}
+[29.993079] (-) TimerEvent: {}
+[30.094143] (-) TimerEvent: {}
+[30.195225] (-) TimerEvent: {}
+[30.297818] (-) TimerEvent: {}
+[30.399034] (-) TimerEvent: {}
+[30.492102] (imu_filter_madgwick) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[30.499286] (-) TimerEvent: {}
+[30.600482] (-) TimerEvent: {}
+[30.701619] (-) TimerEvent: {}
+[30.802623] (-) TimerEvent: {}
+[30.904637] (-) TimerEvent: {}
+[31.005611] (-) TimerEvent: {}
+[31.071581] (imu_filter_madgwick) StdoutLine: {'line': b'[ 50%] Built target gtest\n'}
+[31.105846] (-) TimerEvent: {}
+[31.206979] (-) TimerEvent: {}
+[31.308260] (-) TimerEvent: {}
+[31.409391] (-) TimerEvent: {}
+[31.510465] (-) TimerEvent: {}
+[31.611535] (-) TimerEvent: {}
+[31.712686] (-) TimerEvent: {}
+[31.813662] (-) TimerEvent: {}
+[31.914665] (-) TimerEvent: {}
+[32.016073] (-) TimerEvent: {}
+[32.117035] (-) TimerEvent: {}
+[32.218017] (-) TimerEvent: {}
+[32.319019] (-) TimerEvent: {}
+[32.420089] (-) TimerEvent: {}
+[32.521970] (-) TimerEvent: {}
+[32.623033] (-) TimerEvent: {}
+[32.724063] (-) TimerEvent: {}
+[32.825087] (-) TimerEvent: {}
+[32.926182] (-) TimerEvent: {}
+[33.027330] (-) TimerEvent: {}
+[33.128524] (-) TimerEvent: {}
+[33.229755] (-) TimerEvent: {}
+[33.332147] (-) TimerEvent: {}
+[33.436154] (-) TimerEvent: {}
+[33.537365] (-) TimerEvent: {}
+[33.638536] (-) TimerEvent: {}
+[33.739660] (-) TimerEvent: {}
+[33.841224] (-) TimerEvent: {}
+[33.942833] (-) TimerEvent: {}
+[34.044679] (-) TimerEvent: {}
+[34.147713] (-) TimerEvent: {}
+[34.254706] (-) TimerEvent: {}
+[34.357333] (-) TimerEvent: {}
+[34.458763] (-) TimerEvent: {}
+[34.560101] (-) TimerEvent: {}
+[34.662096] (-) TimerEvent: {}
+[34.765191] (-) TimerEvent: {}
+[34.866614] (-) TimerEvent: {}
+[34.967880] (-) TimerEvent: {}
+[35.076564] (-) TimerEvent: {}
+[35.180306] (-) TimerEvent: {}
+[35.281410] (-) TimerEvent: {}
+[35.382868] (-) TimerEvent: {}
+[35.484073] (-) TimerEvent: {}
+[35.585243] (-) TimerEvent: {}
+[35.686835] (-) TimerEvent: {}
+[35.788484] (-) TimerEvent: {}
+[35.890098] (-) TimerEvent: {}
+[35.991217] (-) TimerEvent: {}
+[36.092404] (-) TimerEvent: {}
+[36.193632] (-) TimerEvent: {}
+[36.294744] (-) TimerEvent: {}
+[36.396427] (-) TimerEvent: {}
+[36.498073] (-) TimerEvent: {}
+[36.599580] (-) TimerEvent: {}
+[36.701136] (-) TimerEvent: {}
+[36.802491] (-) TimerEvent: {}
+[36.903866] (-) TimerEvent: {}
+[37.005357] (-) TimerEvent: {}
+[37.106737] (-) TimerEvent: {}
+[37.208125] (-) TimerEvent: {}
+[37.318771] (-) TimerEvent: {}
+[37.423786] (-) TimerEvent: {}
+[37.536436] (-) TimerEvent: {}
+[37.637409] (-) TimerEvent: {}
+[37.738667] (-) TimerEvent: {}
+[37.839895] (-) TimerEvent: {}
+[37.941257] (-) TimerEvent: {}
+[38.042466] (-) TimerEvent: {}
+[38.143707] (-) TimerEvent: {}
+[38.244995] (-) TimerEvent: {}
+[38.347486] (-) TimerEvent: {}
+[38.448747] (-) TimerEvent: {}
+[38.550007] (-) TimerEvent: {}
+[38.651390] (-) TimerEvent: {}
+[38.753718] (-) TimerEvent: {}
+[38.858640] (-) TimerEvent: {}
+[38.960079] (-) TimerEvent: {}
+[39.061759] (-) TimerEvent: {}
+[39.164684] (-) TimerEvent: {}
+[39.265958] (-) TimerEvent: {}
+[39.367017] (-) TimerEvent: {}
+[39.468058] (-) TimerEvent: {}
+[39.569064] (-) TimerEvent: {}
+[39.670664] (-) TimerEvent: {}
+[39.771681] (-) TimerEvent: {}
+[39.872899] (-) TimerEvent: {}
+[39.979679] (-) TimerEvent: {}
+[40.081181] (-) TimerEvent: {}
+[40.182298] (-) TimerEvent: {}
+[40.283893] (-) TimerEvent: {}
+[40.385842] (-) TimerEvent: {}
+[40.486961] (-) TimerEvent: {}
+[40.588313] (-) TimerEvent: {}
+[40.689573] (-) TimerEvent: {}
+[40.790765] (-) TimerEvent: {}
+[40.892096] (-) TimerEvent: {}
+[40.994366] (-) TimerEvent: {}
+[41.097025] (-) TimerEvent: {}
+[41.198800] (-) TimerEvent: {}
+[41.300904] (-) TimerEvent: {}
+[41.402613] (-) TimerEvent: {}
+[41.504288] (-) TimerEvent: {}
+[41.606305] (-) TimerEvent: {}
+[41.707818] (-) TimerEvent: {}
+[41.809825] (-) TimerEvent: {}
+[41.911242] (-) TimerEvent: {}
+[42.013301] (-) TimerEvent: {}
+[42.114833] (-) TimerEvent: {}
+[42.219959] (-) TimerEvent: {}
+[42.320958] (-) TimerEvent: {}
+[42.421966] (-) TimerEvent: {}
+[42.522972] (-) TimerEvent: {}
+[42.624425] (-) TimerEvent: {}
+[42.726553] (-) TimerEvent: {}
+[42.827578] (-) TimerEvent: {}
+[42.932423] (-) TimerEvent: {}
+[43.036113] (-) TimerEvent: {}
+[43.140097] (-) TimerEvent: {}
+[43.248100] (-) TimerEvent: {}
+[43.349738] (-) TimerEvent: {}
+[43.450817] (-) TimerEvent: {}
+[43.552039] (-) TimerEvent: {}
+[43.653224] (-) TimerEvent: {}
+[43.754410] (-) TimerEvent: {}
+[43.855800] (-) TimerEvent: {}
+[43.956799] (-) TimerEvent: {}
+[44.057822] (-) TimerEvent: {}
+[44.158795] (-) TimerEvent: {}
+[44.259823] (-) TimerEvent: {}
+[44.362241] (-) TimerEvent: {}
+[44.463892] (-) TimerEvent: {}
+[44.568072] (-) TimerEvent: {}
+[44.669139] (-) TimerEvent: {}
+[44.770164] (-) TimerEvent: {}
+[44.871426] (-) TimerEvent: {}
+[44.972798] (-) TimerEvent: {}
+[45.076158] (-) TimerEvent: {}
+[45.183450] (-) TimerEvent: {}
+[45.288179] (-) TimerEvent: {}
+[45.389326] (-) TimerEvent: {}
+[45.490469] (-) TimerEvent: {}
+[45.591625] (-) TimerEvent: {}
+[45.692858] (-) TimerEvent: {}
+[45.794148] (-) TimerEvent: {}
+[45.895972] (-) TimerEvent: {}
+[45.997240] (-) TimerEvent: {}
+[46.098892] (-) TimerEvent: {}
+[46.200595] (-) TimerEvent: {}
+[46.302308] (-) TimerEvent: {}
+[46.408493] (-) TimerEvent: {}
+[46.510066] (-) TimerEvent: {}
+[46.616097] (-) TimerEvent: {}
+[46.717086] (-) TimerEvent: {}
+[46.818131] (-) TimerEvent: {}
+[46.919299] (-) TimerEvent: {}
+[47.020472] (-) TimerEvent: {}
+[47.121489] (-) TimerEvent: {}
+[47.222474] (-) TimerEvent: {}
+[47.323505] (-) TimerEvent: {}
+[47.424559] (-) TimerEvent: {}
+[47.525551] (-) TimerEvent: {}
+[47.626561] (-) TimerEvent: {}
+[47.727598] (-) TimerEvent: {}
+[47.828685] (-) TimerEvent: {}
+[47.929707] (-) TimerEvent: {}
+[48.030719] (-) TimerEvent: {}
+[48.131764] (-) TimerEvent: {}
+[48.232902] (-) TimerEvent: {}
+[48.333966] (-) TimerEvent: {}
+[48.434992] (-) TimerEvent: {}
+[48.536008] (-) TimerEvent: {}
+[48.636959] (-) TimerEvent: {}
+[48.738159] (-) TimerEvent: {}
+[48.839134] (-) TimerEvent: {}
+[48.940002] (-) TimerEvent: {}
+[49.040905] (-) TimerEvent: {}
+[49.142058] (-) TimerEvent: {}
+[49.242917] (-) TimerEvent: {}
+[49.343819] (-) TimerEvent: {}
+[49.444782] (-) TimerEvent: {}
+[49.545558] (-) TimerEvent: {}
+[49.646319] (-) TimerEvent: {}
+[49.747114] (-) TimerEvent: {}
+[49.847876] (-) TimerEvent: {}
+[49.948681] (-) TimerEvent: {}
+[50.049500] (-) TimerEvent: {}
+[50.150291] (-) TimerEvent: {}
+[50.251061] (-) TimerEvent: {}
+[50.351890] (-) TimerEvent: {}
+[50.453039] (-) TimerEvent: {}
+[50.554091] (-) TimerEvent: {}
+[50.655355] (-) TimerEvent: {}
+[50.756633] (-) TimerEvent: {}
+[50.857633] (-) TimerEvent: {}
+[50.958471] (-) TimerEvent: {}
+[51.059309] (-) TimerEvent: {}
+[51.160236] (-) TimerEvent: {}
+[51.261001] (-) TimerEvent: {}
+[51.362092] (-) TimerEvent: {}
+[51.462858] (-) TimerEvent: {}
+[51.563645] (-) TimerEvent: {}
+[51.664432] (-) TimerEvent: {}
+[51.765201] (-) TimerEvent: {}
+[51.865981] (-) TimerEvent: {}
+[51.966740] (-) TimerEvent: {}
+[52.067524] (-) TimerEvent: {}
+[52.168317] (-) TimerEvent: {}
+[52.272079] (-) TimerEvent: {}
+[52.374238] (-) TimerEvent: {}
+[52.476071] (-) TimerEvent: {}
+[52.577303] (-) TimerEvent: {}
+[52.678194] (-) TimerEvent: {}
+[52.779123] (-) TimerEvent: {}
+[52.880063] (-) TimerEvent: {}
+[52.980955] (-) TimerEvent: {}
+[53.081833] (-) TimerEvent: {}
+[53.182604] (-) TimerEvent: {}
+[53.283350] (-) TimerEvent: {}
+[53.384188] (-) TimerEvent: {}
+[53.484993] (-) TimerEvent: {}
+[53.586077] (-) TimerEvent: {}
+[53.687250] (-) TimerEvent: {}
+[53.788191] (-) TimerEvent: {}
+[53.889075] (-) TimerEvent: {}
+[53.990241] (-) TimerEvent: {}
+[54.091272] (-) TimerEvent: {}
+[54.192057] (-) TimerEvent: {}
+[54.292814] (-) TimerEvent: {}
+[54.393591] (-) TimerEvent: {}
+[54.494381] (-) TimerEvent: {}
+[54.595174] (-) TimerEvent: {}
+[54.696055] (-) TimerEvent: {}
+[54.796814] (-) TimerEvent: {}
+[54.897610] (-) TimerEvent: {}
+[54.998367] (-) TimerEvent: {}
+[55.099121] (-) TimerEvent: {}
+[55.199959] (-) TimerEvent: {}
+[55.300786] (-) TimerEvent: {}
+[55.401621] (-) TimerEvent: {}
+[55.502457] (-) TimerEvent: {}
+[55.603259] (-) TimerEvent: {}
+[55.708078] (-) TimerEvent: {}
+[55.812439] (-) TimerEvent: {}
+[55.913542] (-) TimerEvent: {}
+[56.014656] (-) TimerEvent: {}
+[56.115726] (-) TimerEvent: {}
+[56.216753] (-) TimerEvent: {}
+[56.317728] (-) TimerEvent: {}
+[56.418460] (-) TimerEvent: {}
+[56.519217] (-) TimerEvent: {}
+[56.619995] (-) TimerEvent: {}
+[56.720743] (-) TimerEvent: {}
+[56.821533] (-) TimerEvent: {}
+[56.922288] (-) TimerEvent: {}
+[57.023068] (-) TimerEvent: {}
+[57.123828] (-) TimerEvent: {}
+[57.224617] (-) TimerEvent: {}
+[57.325379] (-) TimerEvent: {}
+[57.426171] (-) TimerEvent: {}
+[57.526938] (-) TimerEvent: {}
+[57.627695] (-) TimerEvent: {}
+[57.728479] (-) TimerEvent: {}
+[57.829299] (-) TimerEvent: {}
+[57.930114] (-) TimerEvent: {}
+[58.031052] (-) TimerEvent: {}
+[58.131809] (-) TimerEvent: {}
+[58.232543] (-) TimerEvent: {}
+[58.333301] (-) TimerEvent: {}
+[58.434066] (-) TimerEvent: {}
+[58.534810] (-) TimerEvent: {}
+[58.635567] (-) TimerEvent: {}
+[58.736353] (-) TimerEvent: {}
+[58.837040] (-) TimerEvent: {}
+[58.937735] (-) TimerEvent: {}
+[59.038452] (-) TimerEvent: {}
+[59.139145] (-) TimerEvent: {}
+[59.239835] (-) TimerEvent: {}
+[59.340491] (-) TimerEvent: {}
+[59.441126] (-) TimerEvent: {}
+[59.541773] (-) TimerEvent: {}
+[59.642406] (-) TimerEvent: {}
+[59.743054] (-) TimerEvent: {}
+[59.843693] (-) TimerEvent: {}
+[59.944350] (-) TimerEvent: {}
+[60.044987] (-) TimerEvent: {}
+[60.145635] (-) TimerEvent: {}
+[60.246299] (-) TimerEvent: {}
+[60.296471] (imu_complementary_filter) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX static library libcomplementary_filter.a\x1b[0m\n'}
+[60.346486] (-) TimerEvent: {}
+[60.447163] (-) TimerEvent: {}
+[60.547850] (-) TimerEvent: {}
+[60.648529] (-) TimerEvent: {}
+[60.655631] (imu_complementary_filter) StdoutLine: {'line': b'[ 60%] Built target complementary_filter\n'}
+[60.686764] (imu_complementary_filter) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target complementary_filter_node\x1b[0m\n'}
+[60.709866] (rviz_imu_plugin) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library librviz_imu_plugin.so\x1b[0m\n'}
+[60.748699] (-) TimerEvent: {}
+[60.799859] (imu_complementary_filter) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/complementary_filter_node.dir/src/complementary_filter_node.cpp.o\x1b[0m\n'}
+[60.848860] (-) TimerEvent: {}
+[60.949522] (-) TimerEvent: {}
+[61.050193] (-) TimerEvent: {}
+[61.150933] (-) TimerEvent: {}
+[61.251652] (-) TimerEvent: {}
+[61.352244] (-) TimerEvent: {}
+[61.452799] (-) TimerEvent: {}
+[61.553477] (-) TimerEvent: {}
+[61.654229] (-) TimerEvent: {}
+[61.754964] (-) TimerEvent: {}
+[61.855695] (-) TimerEvent: {}
+[61.956482] (-) TimerEvent: {}
+[62.057219] (-) TimerEvent: {}
+[62.157994] (-) TimerEvent: {}
+[62.258749] (-) TimerEvent: {}
+[62.359563] (-) TimerEvent: {}
+[62.460399] (-) TimerEvent: {}
+[62.561195] (-) TimerEvent: {}
+[62.661979] (-) TimerEvent: {}
+[62.762809] (-) TimerEvent: {}
+[62.863638] (-) TimerEvent: {}
+[62.964498] (-) TimerEvent: {}
+[63.065320] (-) TimerEvent: {}
+[63.166146] (-) TimerEvent: {}
+[63.266982] (-) TimerEvent: {}
+[63.367803] (-) TimerEvent: {}
+[63.468645] (-) TimerEvent: {}
+[63.569513] (-) TimerEvent: {}
+[63.670332] (-) TimerEvent: {}
+[63.771149] (-) TimerEvent: {}
+[63.872051] (-) TimerEvent: {}
+[63.972956] (-) TimerEvent: {}
+[64.073853] (-) TimerEvent: {}
+[64.174739] (-) TimerEvent: {}
+[64.275557] (-) TimerEvent: {}
+[64.376403] (-) TimerEvent: {}
+[64.477203] (-) TimerEvent: {}
+[64.577990] (-) TimerEvent: {}
+[64.678715] (-) TimerEvent: {}
+[64.779448] (-) TimerEvent: {}
+[64.880181] (-) TimerEvent: {}
+[64.980936] (-) TimerEvent: {}
+[65.081656] (-) TimerEvent: {}
+[65.182329] (-) TimerEvent: {}
+[65.283008] (-) TimerEvent: {}
+[65.383667] (-) TimerEvent: {}
+[65.484377] (-) TimerEvent: {}
+[65.585086] (-) TimerEvent: {}
+[65.685798] (-) TimerEvent: {}
+[65.731566] (rviz_imu_plugin) StdoutLine: {'line': b'[100%] Built target rviz_imu_plugin\n'}
+[65.765484] (rviz_imu_plugin) CommandEnded: {'returncode': 0}
+[65.767756] (rviz_imu_plugin) JobProgress: {'identifier': 'rviz_imu_plugin', 'progress': 'install'}
+[65.772347] (imu_complementary_filter) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable complementary_filter_node\x1b[0m\n'}
+[65.785967] (-) TimerEvent: {}
+[65.805448] (rviz_imu_plugin) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xk/go2_slam_nav/build/rviz_imu_plugin'], 'cwd': '/home/xk/go2_slam_nav/build/rviz_imu_plugin', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'xk'), ('LC_TIME', 'en_AU.UTF-8'), ('SSH_AGENT_PID', '4166'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib:'), ('HOME', '/home/xk'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces>\n                            <NetworkInterface name="enp0s31f6" priority="default" multicast="default" />\n                        </Interfaces></General></Domain></CycloneDDS>'), ('OLDPWD', '/home/xk'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'en_AU.UTF-8'), ('MANAGERPID', '4090'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'xk'), ('JOURNAL_STREAM', '8:123580'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/x86_64-linux-gnu/pkgconfig:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/xk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/xk:@/tmp/.ICE-unix/4222,unix/xk:/tmp/.ICE-unix/4222'), ('GDM_LANG', 'en_AU'), ('INVOCATION_ID', '60b5be679248416cbb839d3f155696f7'), ('PAPERSIZE', 'a4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_AU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/30b98a50_2d62_4195_8a05_42ab8fb7b3a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_AU.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/xk/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.364'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/xk'), ('AMENT_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_AU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_AU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_AU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xk/go2_slam_nav/build/rviz_imu_plugin'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_AU.UTF-8'), ('LC_PAPER', 'en_AU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[65.829278] (rviz_imu_plugin) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[65.830619] (rviz_imu_plugin) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[65.831634] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin//plugin_description.xml\n'}
+[65.860517] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/library_path.sh\n'}
+[65.886135] (-) TimerEvent: {}
+[65.888390] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/library_path.dsv\n'}
+[65.917619] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/ament_index/resource_index/package_run_dependencies/rviz_imu_plugin\n'}
+[65.947575] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/ament_index/resource_index/parent_prefix_path/rviz_imu_plugin\n'}
+[65.976647] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/ament_prefix_path.sh\n'}
+[65.986276] (-) TimerEvent: {}
+[66.005938] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/ament_prefix_path.dsv\n'}
+[66.034086] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/path.sh\n'}
+[66.062450] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/path.dsv\n'}
+[66.086476] (-) TimerEvent: {}
+[66.091992] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/local_setup.bash\n'}
+[66.122484] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/local_setup.sh\n'}
+[66.151544] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/local_setup.zsh\n'}
+[66.181426] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/local_setup.dsv\n'}
+[66.186647] (-) TimerEvent: {}
+[66.211578] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/package.dsv\n'}
+[66.241591] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/ament_index/resource_index/packages/rviz_imu_plugin\n'}
+[66.272394] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/ament_index/resource_index/rviz_common__pluginlib__plugin/rviz_imu_plugin\n'}
+[66.286826] (-) TimerEvent: {}
+[66.302984] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[66.333279] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[66.363699] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[66.387023] (-) TimerEvent: {}
+[66.394683] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/rviz_imu_pluginConfig.cmake\n'}
+[66.429384] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/rviz_imu_pluginConfig-version.cmake\n'}
+[66.461630] (rviz_imu_plugin) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/package.xml\n'}
+[66.487221] (-) TimerEvent: {}
+[66.493185] (rviz_imu_plugin) StdoutLine: {'line': b'-- Installing: /home/xk/go2_slam_nav/install/rviz_imu_plugin/lib/librviz_imu_plugin.so\n'}
+[66.507597] (rviz_imu_plugin) StdoutLine: {'line': b'-- Set runtime path of "/home/xk/go2_slam_nav/install/rviz_imu_plugin/lib/librviz_imu_plugin.so" to ""\n'}
+[66.512647] (rviz_imu_plugin) CommandEnded: {'returncode': 0}
+[66.570469] (rviz_imu_plugin) JobEnded: {'identifier': 'rviz_imu_plugin', 'rc': 0}
+[66.587383] (-) TimerEvent: {}
+[66.688034] (-) TimerEvent: {}
+[66.788691] (-) TimerEvent: {}
+[66.889310] (-) TimerEvent: {}
+[66.989998] (-) TimerEvent: {}
+[67.090638] (-) TimerEvent: {}
+[67.095255] (imu_complementary_filter) StdoutLine: {'line': b'[100%] Built target complementary_filter_node\n'}
+[67.109572] (imu_filter_madgwick) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libimu_filter_madgwick.so\x1b[0m\n'}
+[67.125699] (imu_complementary_filter) CommandEnded: {'returncode': 0}
+[67.128380] (imu_complementary_filter) JobProgress: {'identifier': 'imu_complementary_filter', 'progress': 'install'}
+[67.132362] (imu_complementary_filter) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xk/go2_slam_nav/build/imu_complementary_filter'], 'cwd': '/home/xk/go2_slam_nav/build/imu_complementary_filter', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'xk'), ('LC_TIME', 'en_AU.UTF-8'), ('SSH_AGENT_PID', '4166'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib:'), ('HOME', '/home/xk'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces>\n                            <NetworkInterface name="enp0s31f6" priority="default" multicast="default" />\n                        </Interfaces></General></Domain></CycloneDDS>'), ('OLDPWD', '/home/xk'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'en_AU.UTF-8'), ('MANAGERPID', '4090'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'xk'), ('JOURNAL_STREAM', '8:123580'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/x86_64-linux-gnu/pkgconfig:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/xk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/xk:@/tmp/.ICE-unix/4222,unix/xk:/tmp/.ICE-unix/4222'), ('GDM_LANG', 'en_AU'), ('INVOCATION_ID', '60b5be679248416cbb839d3f155696f7'), ('PAPERSIZE', 'a4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_AU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/30b98a50_2d62_4195_8a05_42ab8fb7b3a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_AU.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/xk/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.364'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/xk'), ('AMENT_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_AU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_AU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_AU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xk/go2_slam_nav/build/imu_complementary_filter'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_AU.UTF-8'), ('LC_PAPER', 'en_AU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[67.154328] (imu_complementary_filter) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[67.155579] (imu_complementary_filter) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[67.156881] (imu_complementary_filter) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/lib/imu_complementary_filter/libcomplementary_filter.a\n'}
+[67.183083] (imu_complementary_filter) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/lib/imu_complementary_filter/complementary_filter_node\n'}
+[67.190803] (-) TimerEvent: {}
+[67.208028] (imu_complementary_filter) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/launch/complementary_filter.launch.py\n'}
+[67.234435] (imu_complementary_filter) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/ament_index/resource_index/package_run_dependencies/imu_complementary_filter\n'}
+[67.260678] (imu_complementary_filter) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/ament_index/resource_index/parent_prefix_path/imu_complementary_filter\n'}
+[67.286751] (imu_complementary_filter) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/environment/ament_prefix_path.sh\n'}
+[67.290948] (-) TimerEvent: {}
+[67.311688] (imu_complementary_filter) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/environment/ament_prefix_path.dsv\n'}
+[67.338679] (imu_complementary_filter) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/environment/path.sh\n'}
+[67.364301] (imu_complementary_filter) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/environment/path.dsv\n'}
+[67.389627] (imu_complementary_filter) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/local_setup.bash\n'}
+[67.391092] (-) TimerEvent: {}
+[67.416015] (imu_complementary_filter) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/local_setup.sh\n'}
+[67.443185] (imu_complementary_filter) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/local_setup.zsh\n'}
+[67.467107] (imu_complementary_filter) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/local_setup.dsv\n'}
+[67.491279] (-) TimerEvent: {}
+[67.491777] (imu_complementary_filter) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/package.dsv\n'}
+[67.516024] (imu_complementary_filter) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/ament_index/resource_index/packages/imu_complementary_filter\n'}
+[67.540852] (imu_complementary_filter) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[67.565217] (imu_complementary_filter) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[67.589339] (imu_complementary_filter) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/cmake/imu_complementary_filterConfig.cmake\n'}
+[67.591425] (-) TimerEvent: {}
+[67.613014] (imu_complementary_filter) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/cmake/imu_complementary_filterConfig-version.cmake\n'}
+[67.637268] (imu_complementary_filter) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/package.xml\n'}
+[67.660444] (imu_complementary_filter) StdoutLine: {'line': b'-- Installing: /home/xk/go2_slam_nav/install/imu_complementary_filter/include/imu_complementary_filter\n'}
+[67.661060] (imu_complementary_filter) StdoutLine: {'line': b'-- Installing: /home/xk/go2_slam_nav/install/imu_complementary_filter/include/imu_complementary_filter/complementary_filter.h\n'}
+[67.661276] (imu_complementary_filter) StdoutLine: {'line': b'-- Installing: /home/xk/go2_slam_nav/install/imu_complementary_filter/include/imu_complementary_filter/complementary_filter_ros.h\n'}
+[67.666540] (imu_complementary_filter) CommandEnded: {'returncode': 0}
+[67.693123] (-) TimerEvent: {}
+[67.699392] (imu_complementary_filter) JobEnded: {'identifier': 'imu_complementary_filter', 'rc': 0}
+[67.793290] (-) TimerEvent: {}
+[67.893754] (-) TimerEvent: {}
+[67.994215] (-) TimerEvent: {}
+[68.094662] (-) TimerEvent: {}
+[68.195096] (-) TimerEvent: {}
+[68.295513] (-) TimerEvent: {}
+[68.395955] (-) TimerEvent: {}
+[68.396892] (imu_filter_madgwick) StdoutLine: {'line': b'[ 57%] Built target imu_filter_madgwick\n'}
+[68.418924] (imu_filter_madgwick) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target imu_filter_madgwick_node\x1b[0m\n'}
+[68.419357] (imu_filter_madgwick) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target stateless_orientation_test\x1b[0m\n'}
+[68.419786] (imu_filter_madgwick) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target madgwick_test\x1b[0m\n'}
+[68.453939] (imu_filter_madgwick) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object test/CMakeFiles/madgwick_test.dir/madgwick_test.cpp.o\x1b[0m\n'}
+[68.462408] (imu_filter_madgwick) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object test/CMakeFiles/stateless_orientation_test.dir/stateless_orientation_test.cpp.o\x1b[0m\n'}
+[68.496106] (-) TimerEvent: {}
+[68.512382] (imu_filter_madgwick) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/imu_filter_madgwick_node.dir/src/imu_filter_node.cpp.o\x1b[0m\n'}
+[68.596257] (-) TimerEvent: {}
+[68.696767] (-) TimerEvent: {}
+[68.797215] (-) TimerEvent: {}
+[68.897763] (-) TimerEvent: {}
+[68.998301] (-) TimerEvent: {}
+[69.098831] (-) TimerEvent: {}
+[69.199366] (-) TimerEvent: {}
+[69.299897] (-) TimerEvent: {}
+[69.400450] (-) TimerEvent: {}
+[69.500983] (-) TimerEvent: {}
+[69.601515] (-) TimerEvent: {}
+[69.702058] (-) TimerEvent: {}
+[69.802602] (-) TimerEvent: {}
+[69.903173] (-) TimerEvent: {}
+[70.003745] (-) TimerEvent: {}
+[70.104343] (-) TimerEvent: {}
+[70.204919] (-) TimerEvent: {}
+[70.305476] (-) TimerEvent: {}
+[70.405963] (-) TimerEvent: {}
+[70.506447] (-) TimerEvent: {}
+[70.606936] (-) TimerEvent: {}
+[70.613827] (imu_filter_madgwick) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable madgwick_test\x1b[0m\n'}
+[70.707122] (-) TimerEvent: {}
+[70.807613] (-) TimerEvent: {}
+[70.908112] (-) TimerEvent: {}
+[70.961029] (imu_filter_madgwick) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable stateless_orientation_test\x1b[0m\n'}
+[71.008279] (-) TimerEvent: {}
+[71.108920] (-) TimerEvent: {}
+[71.209554] (-) TimerEvent: {}
+[71.310178] (-) TimerEvent: {}
+[71.410796] (-) TimerEvent: {}
+[71.511380] (-) TimerEvent: {}
+[71.517746] (imu_filter_madgwick) StdoutLine: {'line': b'[ 92%] Built target madgwick_test\n'}
+[71.611519] (-) TimerEvent: {}
+[71.712027] (-) TimerEvent: {}
+[71.812540] (-) TimerEvent: {}
+[71.894210] (imu_filter_madgwick) StdoutLine: {'line': b'[ 92%] Built target stateless_orientation_test\n'}
+[71.912666] (-) TimerEvent: {}
+[72.013197] (-) TimerEvent: {}
+[72.113690] (-) TimerEvent: {}
+[72.214166] (-) TimerEvent: {}
+[72.314643] (-) TimerEvent: {}
+[72.415068] (-) TimerEvent: {}
+[72.427720] (imu_filter_madgwick) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable imu_filter_madgwick_node\x1b[0m\n'}
+[72.515221] (-) TimerEvent: {}
+[72.615757] (-) TimerEvent: {}
+[72.716318] (-) TimerEvent: {}
+[72.816824] (-) TimerEvent: {}
+[72.917331] (-) TimerEvent: {}
+[72.950682] (imu_filter_madgwick) StdoutLine: {'line': b'[100%] Built target imu_filter_madgwick_node\n'}
+[72.971941] (imu_filter_madgwick) CommandEnded: {'returncode': 0}
+[72.973379] (imu_filter_madgwick) JobProgress: {'identifier': 'imu_filter_madgwick', 'progress': 'install'}
+[72.976069] (imu_filter_madgwick) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xk/go2_slam_nav/build/imu_filter_madgwick'], 'cwd': '/home/xk/go2_slam_nav/build/imu_filter_madgwick', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'xk'), ('LC_TIME', 'en_AU.UTF-8'), ('SSH_AGENT_PID', '4166'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib:'), ('HOME', '/home/xk'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces>\n                            <NetworkInterface name="enp0s31f6" priority="default" multicast="default" />\n                        </Interfaces></General></Domain></CycloneDDS>'), ('OLDPWD', '/home/xk'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'en_AU.UTF-8'), ('MANAGERPID', '4090'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'xk'), ('JOURNAL_STREAM', '8:123580'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/x86_64-linux-gnu/pkgconfig:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/xk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/xk:@/tmp/.ICE-unix/4222,unix/xk:/tmp/.ICE-unix/4222'), ('GDM_LANG', 'en_AU'), ('INVOCATION_ID', '60b5be679248416cbb839d3f155696f7'), ('PAPERSIZE', 'a4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_AU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/30b98a50_2d62_4195_8a05_42ab8fb7b3a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_AU.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/xk/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.364'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/xk'), ('AMENT_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_AU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_AU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_AU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xk/go2_slam_nav/build/imu_filter_madgwick'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_AU.UTF-8'), ('LC_PAPER', 'en_AU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[72.991754] (imu_filter_madgwick) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[72.992656] (imu_filter_madgwick) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[72.993746] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/include/imu_filter_madgwick/base_node.hpp\n'}
+[73.010988] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/include/imu_filter_madgwick/imu_filter.h\n'}
+[73.017476] (-) TimerEvent: {}
+[73.028351] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/include/imu_filter_madgwick/imu_filter_ros.h\n'}
+[73.046137] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/include/imu_filter_madgwick/stateless_orientation.h\n'}
+[73.063629] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/include/imu_filter_madgwick/visibility_control.h\n'}
+[73.081074] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/include/imu_filter_madgwick/world_frame.h\n'}
+[73.099229] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/lib/imu_filter_madgwick/imu_filter_madgwick_node\n'}
+[73.117439] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/launch/imu_filter.launch.py\n'}
+[73.117692] (-) TimerEvent: {}
+[73.134887] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/launch/imu_filter_component.launch.py\n'}
+[73.151840] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/config/imu_filter.yaml\n'}
+[73.169585] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/library_path.sh\n'}
+[73.186942] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/library_path.dsv\n'}
+[73.205971] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/ament_index/resource_index/package_run_dependencies/imu_filter_madgwick\n'}
+[73.217842] (-) TimerEvent: {}
+[73.222761] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/ament_index/resource_index/parent_prefix_path/imu_filter_madgwick\n'}
+[73.238404] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/ament_prefix_path.sh\n'}
+[73.254604] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/ament_prefix_path.dsv\n'}
+[73.270173] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/path.sh\n'}
+[73.286134] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/path.dsv\n'}
+[73.301556] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.bash\n'}
+[73.317168] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.sh\n'}
+[73.317964] (-) TimerEvent: {}
+[73.332748] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.zsh\n'}
+[73.348754] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.dsv\n'}
+[73.364211] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/package.dsv\n'}
+[73.379937] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/ament_index/resource_index/packages/imu_filter_madgwick\n'}
+[73.395584] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/ament_index/resource_index/rclcpp_components/imu_filter_madgwick\n'}
+[73.410937] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[73.418095] (-) TimerEvent: {}
+[73.426470] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[73.442378] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/imu_filter_madgwickConfig.cmake\n'}
+[73.459370] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/imu_filter_madgwickConfig-version.cmake\n'}
+[73.476016] (imu_filter_madgwick) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_filter_madgwick/share/imu_filter_madgwick/package.xml\n'}
+[73.492262] (imu_filter_madgwick) StdoutLine: {'line': b'-- Installing: /home/xk/go2_slam_nav/install/imu_filter_madgwick/lib/libimu_filter_madgwick.so\n'}
+[73.503485] (imu_filter_madgwick) StdoutLine: {'line': b'-- Set runtime path of "/home/xk/go2_slam_nav/install/imu_filter_madgwick/lib/libimu_filter_madgwick.so" to ""\n'}
+[73.507886] (imu_filter_madgwick) CommandEnded: {'returncode': 0}
+[73.518573] (-) TimerEvent: {}
+[73.536536] (imu_filter_madgwick) JobEnded: {'identifier': 'imu_filter_madgwick', 'rc': 0}
+[73.537330] (imu_tools) JobStarted: {'identifier': 'imu_tools'}
+[73.556654] (imu_tools) JobProgress: {'identifier': 'imu_tools', 'progress': 'cmake'}
+[73.557653] (imu_tools) Command: {'cmd': ['/usr/bin/cmake', '/home/xk/go2_slam_nav/src/imu_tools/imu_tools', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/xk/go2_slam_nav/install/imu_tools'], 'cwd': '/home/xk/go2_slam_nav/build/imu_tools', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'xk'), ('LC_TIME', 'en_AU.UTF-8'), ('SSH_AGENT_PID', '4166'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/xk/go2_slam_nav/install/rviz_imu_plugin/lib:/home/xk/go2_slam_nav/install/imu_filter_madgwick/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib'), ('HOME', '/home/xk'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces>\n                            <NetworkInterface name="enp0s31f6" priority="default" multicast="default" />\n                        </Interfaces></General></Domain></CycloneDDS>'), ('OLDPWD', '/home/xk'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'en_AU.UTF-8'), ('MANAGERPID', '4090'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'xk'), ('JOURNAL_STREAM', '8:123580'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/x86_64-linux-gnu/pkgconfig:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/xk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/xk:@/tmp/.ICE-unix/4222,unix/xk:/tmp/.ICE-unix/4222'), ('GDM_LANG', 'en_AU'), ('INVOCATION_ID', '60b5be679248416cbb839d3f155696f7'), ('PAPERSIZE', 'a4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_AU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/30b98a50_2d62_4195_8a05_42ab8fb7b3a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_AU.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/xk/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.364'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/xk'), ('AMENT_PREFIX_PATH', '/home/xk/go2_slam_nav/install/rviz_imu_plugin:/home/xk/go2_slam_nav/install/imu_filter_madgwick:/home/xk/go2_slam_nav/install/imu_complementary_filter:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_AU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_AU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_AU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xk/go2_slam_nav/build/imu_tools'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_AU.UTF-8'), ('LC_PAPER', 'en_AU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/xk/go2_slam_nav/install/rviz_imu_plugin:/home/xk/go2_slam_nav/install/imu_filter_madgwick:/home/xk/go2_slam_nav/install/imu_complementary_filter:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[73.618770] (-) TimerEvent: {}
+[73.646985] (imu_tools) StdoutLine: {'line': b'-- The C compiler identification is GNU 8.4.0\n'}
+[73.718902] (-) TimerEvent: {}
+[73.733706] (imu_tools) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 8.4.0\n'}
+[73.741805] (imu_tools) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[73.819050] (-) TimerEvent: {}
+[73.848943] (imu_tools) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[73.850499] (imu_tools) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[73.919174] (-) TimerEvent: {}
+[73.958906] (imu_tools) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[73.979693] (imu_tools) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[73.980334] (imu_tools) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[73.984424] (imu_tools) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[74.019318] (-) TimerEvent: {}
+[74.107957] (imu_tools) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[74.109765] (imu_tools) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[74.119461] (-) TimerEvent: {}
+[74.219807] (-) TimerEvent: {}
+[74.234519] (imu_tools) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[74.257653] (imu_tools) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[74.258598] (imu_tools) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[74.263331] (imu_tools) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[74.307571] (imu_tools) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[74.307852] (imu_tools) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[74.319946] (-) TimerEvent: {}
+[74.420253] (-) TimerEvent: {}
+[74.520602] (-) TimerEvent: {}
+[74.620938] (-) TimerEvent: {}
+[74.625113] (imu_tools) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[74.721073] (-) TimerEvent: {}
+[74.775077] (imu_tools) StdoutLine: {'line': b'-- Configuring done\n'}
+[74.777769] (imu_tools) StdoutLine: {'line': b'-- Generating done\n'}
+[74.779823] (imu_tools) StdoutLine: {'line': b'-- Build files have been written to: /home/xk/go2_slam_nav/build/imu_tools\n'}
+[74.784277] (imu_tools) CommandEnded: {'returncode': 0}
+[74.787551] (imu_tools) JobProgress: {'identifier': 'imu_tools', 'progress': 'build'}
+[74.787813] (imu_tools) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xk/go2_slam_nav/build/imu_tools', '--', '-j8', '-l8'], 'cwd': '/home/xk/go2_slam_nav/build/imu_tools', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'xk'), ('LC_TIME', 'en_AU.UTF-8'), ('SSH_AGENT_PID', '4166'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/xk/go2_slam_nav/install/rviz_imu_plugin/lib:/home/xk/go2_slam_nav/install/imu_filter_madgwick/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib'), ('HOME', '/home/xk'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces>\n                            <NetworkInterface name="enp0s31f6" priority="default" multicast="default" />\n                        </Interfaces></General></Domain></CycloneDDS>'), ('OLDPWD', '/home/xk'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'en_AU.UTF-8'), ('MANAGERPID', '4090'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'xk'), ('JOURNAL_STREAM', '8:123580'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/x86_64-linux-gnu/pkgconfig:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/xk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/xk:@/tmp/.ICE-unix/4222,unix/xk:/tmp/.ICE-unix/4222'), ('GDM_LANG', 'en_AU'), ('INVOCATION_ID', '60b5be679248416cbb839d3f155696f7'), ('PAPERSIZE', 'a4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_AU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/30b98a50_2d62_4195_8a05_42ab8fb7b3a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_AU.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/xk/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.364'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/xk'), ('AMENT_PREFIX_PATH', '/home/xk/go2_slam_nav/install/rviz_imu_plugin:/home/xk/go2_slam_nav/install/imu_filter_madgwick:/home/xk/go2_slam_nav/install/imu_complementary_filter:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_AU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_AU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_AU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xk/go2_slam_nav/build/imu_tools'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_AU.UTF-8'), ('LC_PAPER', 'en_AU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/xk/go2_slam_nav/install/rviz_imu_plugin:/home/xk/go2_slam_nav/install/imu_filter_madgwick:/home/xk/go2_slam_nav/install/imu_complementary_filter:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[74.821232] (-) TimerEvent: {}
+[74.846741] (imu_tools) CommandEnded: {'returncode': 0}
+[74.847980] (imu_tools) JobProgress: {'identifier': 'imu_tools', 'progress': 'install'}
+[74.850235] (imu_tools) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xk/go2_slam_nav/build/imu_tools'], 'cwd': '/home/xk/go2_slam_nav/build/imu_tools', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'xk'), ('LC_TIME', 'en_AU.UTF-8'), ('SSH_AGENT_PID', '4166'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/xk/go2_slam_nav/install/rviz_imu_plugin/lib:/home/xk/go2_slam_nav/install/imu_filter_madgwick/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib'), ('HOME', '/home/xk'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces>\n                            <NetworkInterface name="enp0s31f6" priority="default" multicast="default" />\n                        </Interfaces></General></Domain></CycloneDDS>'), ('OLDPWD', '/home/xk'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'en_AU.UTF-8'), ('MANAGERPID', '4090'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'xk'), ('JOURNAL_STREAM', '8:123580'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/x86_64-linux-gnu/pkgconfig:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/xk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/xk:@/tmp/.ICE-unix/4222,unix/xk:/tmp/.ICE-unix/4222'), ('GDM_LANG', 'en_AU'), ('INVOCATION_ID', '60b5be679248416cbb839d3f155696f7'), ('PAPERSIZE', 'a4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_AU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/30b98a50_2d62_4195_8a05_42ab8fb7b3a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_AU.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/xk/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.364'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/xk'), ('AMENT_PREFIX_PATH', '/home/xk/go2_slam_nav/install/rviz_imu_plugin:/home/xk/go2_slam_nav/install/imu_filter_madgwick:/home/xk/go2_slam_nav/install/imu_complementary_filter:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_AU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_AU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_AU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xk/go2_slam_nav/build/imu_tools'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9fa347161073124783c794266805f21e'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go/lib/python3.8/site-packages:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_AU.UTF-8'), ('LC_PAPER', 'en_AU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/xk/go2_slam_nav/install/rviz_imu_plugin:/home/xk/go2_slam_nav/install/imu_filter_madgwick:/home/xk/go2_slam_nav/install/imu_complementary_filter:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/xk/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/xk/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/xk/unitree_ros2/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[74.863789] (imu_tools) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[74.864544] (imu_tools) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[74.865085] (imu_tools) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_tools/share/ament_index/resource_index/package_run_dependencies/imu_tools\n'}
+[74.879304] (imu_tools) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_tools/share/ament_index/resource_index/parent_prefix_path/imu_tools\n'}
+[74.893229] (imu_tools) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_tools/share/imu_tools/environment/ament_prefix_path.sh\n'}
+[74.907222] (imu_tools) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_tools/share/imu_tools/environment/ament_prefix_path.dsv\n'}
+[74.921112] (imu_tools) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_tools/share/imu_tools/environment/path.sh\n'}
+[74.921336] (-) TimerEvent: {}
+[74.934899] (imu_tools) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_tools/share/imu_tools/environment/path.dsv\n'}
+[74.948769] (imu_tools) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_tools/share/imu_tools/local_setup.bash\n'}
+[74.963519] (imu_tools) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_tools/share/imu_tools/local_setup.sh\n'}
+[74.977948] (imu_tools) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_tools/share/imu_tools/local_setup.zsh\n'}
+[74.992807] (imu_tools) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_tools/share/imu_tools/local_setup.dsv\n'}
+[75.007362] (imu_tools) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_tools/share/imu_tools/package.dsv\n'}
+[75.021177] (imu_tools) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_tools/share/ament_index/resource_index/packages/imu_tools\n'}
+[75.021400] (-) TimerEvent: {}
+[75.035749] (imu_tools) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_tools/share/imu_tools/cmake/imu_toolsConfig.cmake\n'}
+[75.049545] (imu_tools) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_tools/share/imu_tools/cmake/imu_toolsConfig-version.cmake\n'}
+[75.063546] (imu_tools) StdoutLine: {'line': b'-- Symlinking: /home/xk/go2_slam_nav/install/imu_tools/share/imu_tools/package.xml\n'}
+[75.080477] (imu_tools) CommandEnded: {'returncode': 0}
+[75.098713] (imu_tools) JobEnded: {'identifier': 'imu_tools', 'rc': 0}
+[75.099669] (-) EventReactorShutdown: {}

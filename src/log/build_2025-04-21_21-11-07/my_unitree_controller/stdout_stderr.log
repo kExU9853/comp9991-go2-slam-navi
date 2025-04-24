@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating my_unitree_controller.egg-info
+writing my_unitree_controller.egg-info/PKG-INFO
+writing dependency_links to my_unitree_controller.egg-info/dependency_links.txt
+writing entry points to my_unitree_controller.egg-info/entry_points.txt
+writing requirements to my_unitree_controller.egg-info/requires.txt
+writing top-level names to my_unitree_controller.egg-info/top_level.txt
+writing manifest file 'my_unitree_controller.egg-info/SOURCES.txt'
+reading manifest file 'my_unitree_controller.egg-info/SOURCES.txt'
+writing manifest file 'my_unitree_controller.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/xk/go2_slam_nav/src/install/my_unitree_controller/lib/python3.8/site-packages/site.py
+Creating /home/xk/go2_slam_nav/src/install/my_unitree_controller/lib/python3.8/site-packages/my-unitree-controller.egg-link (link to .)
+Installing sport_controller script to /home/xk/go2_slam_nav/src/install/my_unitree_controller/lib/my_unitree_controller
+
+Installed /home/xk/go2_slam_nav/src/build/my_unitree_controller
+running symlink_data
+creating /home/xk/go2_slam_nav/src/install/my_unitree_controller/share/ament_index
+creating /home/xk/go2_slam_nav/src/install/my_unitree_controller/share/ament_index/resource_index
+creating /home/xk/go2_slam_nav/src/install/my_unitree_controller/share/ament_index/resource_index/packages
+symbolically linking /home/xk/go2_slam_nav/src/build/my_unitree_controller/resource/my_unitree_controller -> /home/xk/go2_slam_nav/src/install/my_unitree_controller/share/ament_index/resource_index/packages
+symbolically linking /home/xk/go2_slam_nav/src/build/my_unitree_controller/package.xml -> /home/xk/go2_slam_nav/src/install/my_unitree_controller/share/my_unitree_controller

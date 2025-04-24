@@ -1,0 +1,1 @@
+/home/xk/go2_slam_nav/install/imu_filter_madgwick/lib/libimu_filter_madgwick.so

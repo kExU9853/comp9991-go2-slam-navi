@@ -1,0 +1,83 @@
+[0.046s] Invoking command in '/home/xk/go2_slam_nav/build/imu_complementary_filter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/xk/go2_slam_nav/src/imu_tools/imu_complementary_filter -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xk/go2_slam_nav/install/imu_complementary_filter
+[0.596s] -- The C compiler identification is GNU 8.4.0
+[0.596s] -- The CXX compiler identification is GNU 8.4.0
+[0.598s] -- Check for working C compiler: /usr/bin/cc
+[0.599s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.599s] -- Detecting C compiler ABI info
+[0.599s] -- Detecting C compiler ABI info - done
+[0.599s] -- Detecting C compile features
+[0.599s] -- Detecting C compile features - done
+[0.600s] -- Check for working CXX compiler: /usr/bin/c++
+[0.600s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.600s] -- Detecting CXX compiler ABI info
+[0.600s] -- Detecting CXX compiler ABI info - done
+[0.600s] -- Detecting CXX compile features
+[0.600s] -- Detecting CXX compile features - done
+[0.600s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.601s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.601s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.734s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.801s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.863s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.885s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.070s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.147s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.473s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.067s] -- Found message_filters: 3.2.7 (/opt/ros/foxy/share/message_filters/cmake)
+[2.093s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[2.391s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.405s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.411s] -- Looking for pthread.h
+[2.870s] -- Looking for pthread.h - found
+[2.871s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.315s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.317s] -- Looking for pthread_create in pthreads
+[3.884s] -- Looking for pthread_create in pthreads - not found
+[3.885s] -- Looking for pthread_create in pthread
+[4.459s] -- Looking for pthread_create in pthread - found
+[4.467s] -- Found Threads: TRUE  
+[5.582s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[6.064s] -- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+[6.140s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[8.502s] -- Configuring done
+[8.561s] -- Generating done
+[8.585s] -- Build files have been written to: /home/xk/go2_slam_nav/build/imu_complementary_filter
+[8.613s] Invoked command in '/home/xk/go2_slam_nav/build/imu_complementary_filter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/xk/go2_slam_nav/src/imu_tools/imu_complementary_filter -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xk/go2_slam_nav/install/imu_complementary_filter
+[8.624s] Invoking command in '/home/xk/go2_slam_nav/build/imu_complementary_filter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/xk/go2_slam_nav/build/imu_complementary_filter -- -j8 -l8
+[8.773s] [35m[1mScanning dependencies of target complementary_filter[0m
+[8.908s] [ 20%] [32mBuilding CXX object CMakeFiles/complementary_filter.dir/src/complementary_filter.cpp.o[0m
+[8.930s] [ 40%] [32mBuilding CXX object CMakeFiles/complementary_filter.dir/src/complementary_filter_ros.cpp.o[0m
+[60.296s] [ 60%] [32m[1mLinking CXX static library libcomplementary_filter.a[0m
+[60.655s] [ 60%] Built target complementary_filter
+[60.686s] [35m[1mScanning dependencies of target complementary_filter_node[0m
+[60.799s] [ 80%] [32mBuilding CXX object CMakeFiles/complementary_filter_node.dir/src/complementary_filter_node.cpp.o[0m
+[65.772s] [100%] [32m[1mLinking CXX executable complementary_filter_node[0m
+[67.095s] [100%] Built target complementary_filter_node
+[67.126s] Invoked command in '/home/xk/go2_slam_nav/build/imu_complementary_filter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/xk/go2_slam_nav/build/imu_complementary_filter -- -j8 -l8
+[67.133s] Invoking command in '/home/xk/go2_slam_nav/build/imu_complementary_filter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/xk/go2_slam_nav/build/imu_complementary_filter
+[67.154s] -- Install configuration: ""
+[67.155s] -- Execute custom install script
+[67.156s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/lib/imu_complementary_filter/libcomplementary_filter.a
+[67.182s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/lib/imu_complementary_filter/complementary_filter_node
+[67.207s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/launch/complementary_filter.launch.py
+[67.234s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/ament_index/resource_index/package_run_dependencies/imu_complementary_filter
+[67.260s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/ament_index/resource_index/parent_prefix_path/imu_complementary_filter
+[67.286s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/environment/ament_prefix_path.sh
+[67.311s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/environment/ament_prefix_path.dsv
+[67.338s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/environment/path.sh
+[67.364s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/environment/path.dsv
+[67.389s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/local_setup.bash
+[67.415s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/local_setup.sh
+[67.443s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/local_setup.zsh
+[67.466s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/local_setup.dsv
+[67.491s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/package.dsv
+[67.515s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/ament_index/resource_index/packages/imu_complementary_filter
+[67.540s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/cmake/ament_cmake_export_include_directories-extras.cmake
+[67.565s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/cmake/ament_cmake_export_dependencies-extras.cmake
+[67.589s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/cmake/imu_complementary_filterConfig.cmake
+[67.612s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/cmake/imu_complementary_filterConfig-version.cmake
+[67.637s] -- Symlinking: /home/xk/go2_slam_nav/install/imu_complementary_filter/share/imu_complementary_filter/package.xml
+[67.660s] -- Installing: /home/xk/go2_slam_nav/install/imu_complementary_filter/include/imu_complementary_filter
+[67.660s] -- Installing: /home/xk/go2_slam_nav/install/imu_complementary_filter/include/imu_complementary_filter/complementary_filter.h
+[67.661s] -- Installing: /home/xk/go2_slam_nav/install/imu_complementary_filter/include/imu_complementary_filter/complementary_filter_ros.h
+[67.666s] Invoked command in '/home/xk/go2_slam_nav/build/imu_complementary_filter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/xk/go2_slam_nav/build/imu_complementary_filter

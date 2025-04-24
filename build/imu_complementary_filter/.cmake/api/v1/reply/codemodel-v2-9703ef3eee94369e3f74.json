@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "imu_complementary_filter",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "complementary_filter::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-complementary_filter-6e2422b4c0265400eb40.json",
+					"name" : "complementary_filter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "complementary_filter_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-complementary_filter_node-b199d5c278a9414c1efc.json",
+					"name" : "complementary_filter_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "imu_complementary_filter_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imu_complementary_filter_uninstall-6fe6615879875c0ca354.json",
+					"name" : "imu_complementary_filter_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-07b30fb20e7b022c0603.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/xk/go2_slam_nav/build/imu_complementary_filter",
+		"source" : "/home/xk/go2_slam_nav/src/imu_tools/imu_complementary_filter"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

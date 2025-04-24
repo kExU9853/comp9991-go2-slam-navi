@@ -1,0 +1,24 @@
+[1.260s] Invoking command in '/home/xk/go2_slam_nav/src/build/go2_nav2': PYTHONPATH=/home/xk/go2_slam_nav/src/build/go2_nav2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xk/go2_slam_nav/src/install/go2_nav2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/xk/go2_slam_nav/src/build/go2_nav2/build --no-deps symlink_data
+[1.578s] running develop
+[1.801s] running egg_info
+[1.801s] creating go2_nav2.egg-info
+[1.802s] writing go2_nav2.egg-info/PKG-INFO
+[1.802s] writing dependency_links to go2_nav2.egg-info/dependency_links.txt
+[1.802s] writing entry points to go2_nav2.egg-info/entry_points.txt
+[1.802s] writing requirements to go2_nav2.egg-info/requires.txt
+[1.802s] writing top-level names to go2_nav2.egg-info/top_level.txt
+[1.804s] writing manifest file 'go2_nav2.egg-info/SOURCES.txt'
+[1.844s] reading manifest file 'go2_nav2.egg-info/SOURCES.txt'
+[1.845s] writing manifest file 'go2_nav2.egg-info/SOURCES.txt'
+[1.883s] running build_ext
+[1.883s] Creating /home/xk/go2_slam_nav/src/install/go2_nav2/lib/python3.8/site-packages/site.py
+[1.886s] Creating /home/xk/go2_slam_nav/src/install/go2_nav2/lib/python3.8/site-packages/go2-nav2.egg-link (link to .)
+[1.887s] 
+[1.887s] Installed /home/xk/go2_slam_nav/src/build/go2_nav2
+[1.887s] running symlink_data
+[1.887s] creating /home/xk/go2_slam_nav/src/install/go2_nav2/share/ament_index
+[1.888s] creating /home/xk/go2_slam_nav/src/install/go2_nav2/share/ament_index/resource_index
+[1.888s] creating /home/xk/go2_slam_nav/src/install/go2_nav2/share/ament_index/resource_index/packages
+[1.888s] symbolically linking /home/xk/go2_slam_nav/src/build/go2_nav2/resource/go2_nav2 -> /home/xk/go2_slam_nav/src/install/go2_nav2/share/ament_index/resource_index/packages
+[1.888s] symbolically linking /home/xk/go2_slam_nav/src/build/go2_nav2/package.xml -> /home/xk/go2_slam_nav/src/install/go2_nav2/share/go2_nav2
+[1.967s] Invoked command in '/home/xk/go2_slam_nav/src/build/go2_nav2' returned '0': PYTHONPATH=/home/xk/go2_slam_nav/src/build/go2_nav2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xk/go2_slam_nav/src/install/go2_nav2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/xk/go2_slam_nav/src/build/go2_nav2/build --no-deps symlink_data

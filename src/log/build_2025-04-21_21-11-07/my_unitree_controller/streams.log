@@ -1,0 +1,25 @@
+[1.243s] Invoking command in '/home/xk/go2_slam_nav/src/build/my_unitree_controller': PYTHONPATH=/home/xk/go2_slam_nav/src/build/my_unitree_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xk/go2_slam_nav/src/install/my_unitree_controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/xk/go2_slam_nav/src/build/my_unitree_controller/build --no-deps symlink_data
+[1.573s] running develop
+[1.764s] running egg_info
+[1.765s] creating my_unitree_controller.egg-info
+[1.765s] writing my_unitree_controller.egg-info/PKG-INFO
+[1.765s] writing dependency_links to my_unitree_controller.egg-info/dependency_links.txt
+[1.765s] writing entry points to my_unitree_controller.egg-info/entry_points.txt
+[1.765s] writing requirements to my_unitree_controller.egg-info/requires.txt
+[1.765s] writing top-level names to my_unitree_controller.egg-info/top_level.txt
+[1.767s] writing manifest file 'my_unitree_controller.egg-info/SOURCES.txt'
+[1.809s] reading manifest file 'my_unitree_controller.egg-info/SOURCES.txt'
+[1.810s] writing manifest file 'my_unitree_controller.egg-info/SOURCES.txt'
+[1.859s] running build_ext
+[1.859s] Creating /home/xk/go2_slam_nav/src/install/my_unitree_controller/lib/python3.8/site-packages/site.py
+[1.862s] Creating /home/xk/go2_slam_nav/src/install/my_unitree_controller/lib/python3.8/site-packages/my-unitree-controller.egg-link (link to .)
+[1.863s] Installing sport_controller script to /home/xk/go2_slam_nav/src/install/my_unitree_controller/lib/my_unitree_controller
+[1.863s] 
+[1.863s] Installed /home/xk/go2_slam_nav/src/build/my_unitree_controller
+[1.863s] running symlink_data
+[1.863s] creating /home/xk/go2_slam_nav/src/install/my_unitree_controller/share/ament_index
+[1.864s] creating /home/xk/go2_slam_nav/src/install/my_unitree_controller/share/ament_index/resource_index
+[1.864s] creating /home/xk/go2_slam_nav/src/install/my_unitree_controller/share/ament_index/resource_index/packages
+[1.864s] symbolically linking /home/xk/go2_slam_nav/src/build/my_unitree_controller/resource/my_unitree_controller -> /home/xk/go2_slam_nav/src/install/my_unitree_controller/share/ament_index/resource_index/packages
+[1.864s] symbolically linking /home/xk/go2_slam_nav/src/build/my_unitree_controller/package.xml -> /home/xk/go2_slam_nav/src/install/my_unitree_controller/share/my_unitree_controller
+[1.918s] Invoked command in '/home/xk/go2_slam_nav/src/build/my_unitree_controller' returned '0': PYTHONPATH=/home/xk/go2_slam_nav/src/build/my_unitree_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xk/go2_slam_nav/src/install/my_unitree_controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/xk/go2_slam_nav/src/build/my_unitree_controller/build --no-deps symlink_data

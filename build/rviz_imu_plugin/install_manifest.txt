@@ -1,0 +1,1 @@
+/home/xk/go2_slam_nav/install/rviz_imu_plugin/lib/librviz_imu_plugin.so

@@ -1,0 +1,119 @@
+[0.040s] Invoking command in '/home/xk/go2_slam_nav/build/rviz_imu_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/xk/go2_slam_nav/src/imu_tools/rviz_imu_plugin -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xk/go2_slam_nav/install/rviz_imu_plugin
+[0.586s] -- The C compiler identification is GNU 8.4.0
+[0.587s] -- The CXX compiler identification is GNU 8.4.0
+[0.587s] -- Check for working C compiler: /usr/bin/cc
+[0.587s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.587s] -- Detecting C compiler ABI info
+[0.587s] -- Detecting C compiler ABI info - done
+[0.588s] -- Detecting C compile features
+[0.588s] -- Detecting C compile features - done
+[0.588s] -- Check for working CXX compiler: /usr/bin/c++
+[0.588s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.588s] -- Detecting CXX compiler ABI info
+[0.588s] -- Detecting CXX compiler ABI info - done
+[0.588s] -- Detecting CXX compile features
+[0.589s] -- Detecting CXX compile features - done
+[0.589s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.589s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.589s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.747s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.791s] -- Found message_filters: 3.2.7 (/opt/ros/foxy/share/message_filters/cmake)
+[0.814s] -- Found rviz_common: 8.2.8 (/opt/ros/foxy/share/rviz_common/cmake)
+[0.827s] -- Setting OGRE_DIR to: '/opt/ros/foxy/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[0.831s] -- Found OGRE
+[0.831s] --   static     : OFF
+[0.831s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[0.832s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[0.832s] --   media      : /opt/ros/foxy/opt/rviz_ogre_vendor/share/OGRE/Media
+[0.832s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[0.832s] -- OGRE_LIBRARY_DIRS: /opt/ros/foxy/opt/rviz_ogre_vendor/lib
+[0.833s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[0.833s] -- OGRE_PLUGIN_DIR: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/OGRE
+[0.833s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[0.833s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[0.833s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[0.834s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[0.887s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[0.896s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[1.087s] -- Found X11: /usr/include   
+[1.088s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[1.267s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[1.267s] -- Looking for gethostbyname
+[1.450s] -- Looking for gethostbyname - found
+[1.451s] -- Looking for connect
+[1.666s] -- Looking for connect - found
+[1.667s] -- Looking for remove
+[1.920s] -- Looking for remove - found
+[1.920s] -- Looking for shmat
+[2.218s] -- Looking for shmat - found
+[2.219s] -- Looking for IceConnectionNumber in ICE
+[2.583s] -- Looking for IceConnectionNumber in ICE - found
+[2.604s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND
+[2.604s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND
+[2.638s] -- library: libassimp.so.5
+[3.161s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[3.479s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.559s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[4.301s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[4.514s] -- Found FastRTPS: /opt/ros/foxy/include  
+[5.247s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.708s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[6.717s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[6.722s] -- Looking for pthread.h
+[7.037s] -- Looking for pthread.h - found
+[7.038s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.339s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[7.340s] -- Looking for pthread_create in pthreads
+[7.626s] -- Looking for pthread_create in pthreads - not found
+[7.627s] -- Looking for pthread_create in pthread
+[7.910s] -- Looking for pthread_create in pthread - found
+[7.914s] -- Found Threads: TRUE  
+[9.017s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[11.928s] -- Setting yaml-cpp_DIR to: '/opt/ros/foxy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'
+[12.392s] -- Configuring done
+[12.555s] -- Generating done
+[12.597s] -- Build files have been written to: /home/xk/go2_slam_nav/build/rviz_imu_plugin
+[12.662s] Invoked command in '/home/xk/go2_slam_nav/build/rviz_imu_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/xk/go2_slam_nav/src/imu_tools/rviz_imu_plugin -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xk/go2_slam_nav/install/rviz_imu_plugin
+[12.666s] Invoking command in '/home/xk/go2_slam_nav/build/rviz_imu_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/xk/go2_slam_nav/build/rviz_imu_plugin -- -j8 -l8
+[12.934s] [35m[1mScanning dependencies of target rviz_imu_plugin_autogen[0m
+[12.977s] [ 11%] [34m[1mAutomatic MOC for target rviz_imu_plugin[0m
+[14.186s] [ 11%] Built target rviz_imu_plugin_autogen
+[14.224s] [35m[1mScanning dependencies of target rviz_imu_plugin[0m
+[14.659s] [ 22%] [32mBuilding CXX object CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.o[0m
+[14.662s] [ 33%] [32mBuilding CXX object CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.o[0m
+[14.663s] [ 44%] [32mBuilding CXX object CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.o[0m
+[14.679s] [ 55%] [32mBuilding CXX object CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.o[0m
+[14.716s] [ 66%] [32mBuilding CXX object CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.o[0m
+[14.722s] [ 77%] [32mBuilding CXX object CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.o[0m
+[14.723s] [ 88%] [32mBuilding CXX object CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.o[0m
+[60.695s] [100%] [32m[1mLinking CXX shared library librviz_imu_plugin.so[0m
+[65.717s] [100%] Built target rviz_imu_plugin
+[65.751s] Invoked command in '/home/xk/go2_slam_nav/build/rviz_imu_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/xk/go2_slam_nav/build/rviz_imu_plugin -- -j8 -l8
+[65.792s] Invoking command in '/home/xk/go2_slam_nav/build/rviz_imu_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/xk/go2_slam_nav/build/rviz_imu_plugin
+[65.814s] -- Install configuration: ""
+[65.816s] -- Execute custom install script
+[65.817s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin//plugin_description.xml
+[65.846s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/library_path.sh
+[65.874s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/library_path.dsv
+[65.903s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/ament_index/resource_index/package_run_dependencies/rviz_imu_plugin
+[65.933s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/ament_index/resource_index/parent_prefix_path/rviz_imu_plugin
+[65.962s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/ament_prefix_path.sh
+[65.991s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/ament_prefix_path.dsv
+[66.019s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/path.sh
+[66.048s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/path.dsv
+[66.077s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/local_setup.bash
+[66.108s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/local_setup.sh
+[66.137s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/local_setup.zsh
+[66.166s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/local_setup.dsv
+[66.197s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/package.dsv
+[66.227s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/ament_index/resource_index/packages/rviz_imu_plugin
+[66.257s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/ament_index/resource_index/rviz_common__pluginlib__plugin/rviz_imu_plugin
+[66.288s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/ament_cmake_export_include_directories-extras.cmake
+[66.318s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/ament_cmake_export_libraries-extras.cmake
+[66.349s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/ament_cmake_export_dependencies-extras.cmake
+[66.380s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/rviz_imu_pluginConfig.cmake
+[66.415s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/rviz_imu_pluginConfig-version.cmake
+[66.447s] -- Symlinking: /home/xk/go2_slam_nav/install/rviz_imu_plugin/share/rviz_imu_plugin/package.xml
+[66.478s] -- Installing: /home/xk/go2_slam_nav/install/rviz_imu_plugin/lib/librviz_imu_plugin.so
+[66.493s] -- Set runtime path of "/home/xk/go2_slam_nav/install/rviz_imu_plugin/lib/librviz_imu_plugin.so" to ""
+[66.500s] Invoked command in '/home/xk/go2_slam_nav/build/rviz_imu_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/xk/go2_slam_nav/build/rviz_imu_plugin

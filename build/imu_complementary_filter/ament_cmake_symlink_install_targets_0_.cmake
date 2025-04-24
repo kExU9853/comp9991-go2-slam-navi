@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/xk/go2_slam_nav/build/imu_complementary_filter/libcomplementary_filter.a" "TARGETS" "complementary_filter" "DESTINATION" "lib/imu_complementary_filter")

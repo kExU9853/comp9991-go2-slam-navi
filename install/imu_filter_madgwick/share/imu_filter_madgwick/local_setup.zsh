@@ -1,0 +1,1 @@
+/home/xk/go2_slam_nav/build/imu_filter_madgwick/ament_cmake_environment_hooks/local_setup.zsh

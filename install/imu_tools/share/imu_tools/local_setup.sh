@@ -1,0 +1,1 @@
+/home/xk/go2_slam_nav/build/imu_tools/ament_cmake_environment_hooks/local_setup.sh

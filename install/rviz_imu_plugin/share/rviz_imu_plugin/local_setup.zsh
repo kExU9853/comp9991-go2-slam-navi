@@ -1,0 +1,1 @@
+/home/xk/go2_slam_nav/build/rviz_imu_plugin/ament_cmake_environment_hooks/local_setup.zsh
