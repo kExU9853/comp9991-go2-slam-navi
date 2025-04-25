@@ -1,57 +1,40 @@
+import yaml
+from pathlib import Path
+
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
-from launch.conditions import IfCondition
 from launch.substitutions import LaunchConfiguration, PythonExpression
+from launch.conditions import IfCondition
 from launch_ros.actions import Node
 
+def load_config():
+    config_path = Path(__file__).parent.parent / 'config' / 'lidar.yaml'
+    with open(config_path, 'r') as f:
+        data = yaml.safe_load(f)
+    return data.get('launch_args', {})
+
 def generate_launch_description():
-    return LaunchDescription([
+    cfg = load_config()
 
-        # ============ Launch Arguments ============
+    declared_args = [
         DeclareLaunchArgument(
-            name='use_sim_time',
-            default_value='false',
-            choices=['true','false'],
-            description='Use simulation (Gazebo) clock if true'
-        ),
-        DeclareLaunchArgument(
-            name='deskewing',
-            default_value='false',
-            choices=['true','false'],
-            description='Enable lidar deskewing'
-        ),
-        DeclareLaunchArgument(
-            name='localize_only',
-            default_value='false',
-            choices=['true','false'],
-            description='Localize only, do not add new places to the map'
-        ),
-        DeclareLaunchArgument(
-            name='restart_map',
-            default_value='true',
-            choices=['true','false'],
-            description='Delete previous map/database and restart'
-        ),
-        DeclareLaunchArgument(
-            name='use_rtabmapviz',
-            default_value='true',
-            choices=['true','false'],
-            description='Start rtabmapviz node'
-        ),
-        DeclareLaunchArgument(
-            name='rtabmap_log_level',
-            default_value='WARN',
-            choices=['ERROR', 'WARN', 'INFO', 'DEBUG'],
-            description='Set logger level for rtabmap.'
-        ),
-        DeclareLaunchArgument(
-            name='icp_odometry_log_level',
-            default_value='WARN',
-            choices=['ERROR', 'WARN', 'INFO', 'DEBUG'],
-            description='Set logger level for icp_odometry.'
-        ),
+            name=arg,
+            default_value=str(cfg[arg]).lower() if isinstance(cfg[arg], bool) else str(cfg[arg]),
+            choices=['true', 'false'] if isinstance(cfg[arg], bool) else None,
+            description=desc
+        )
+        for arg, desc in {
+            'use_sim_time': 'Use simulation (Gazebo) clock if true',
+            'deskewing': 'Enable lidar deskewing',
+            'localize_only': 'Localize only, do not add new places to the map',
+            'restart_map': 'Delete previous map/database and restart',
+            'use_rtabmapviz': 'Start rtabmapviz node',
+            'rtabmap_log_level': 'Set logger level for rtabmap.',
+            'icp_odometry_log_level': 'Set logger level for icp_odometry.',
+        }.items()
+    ]
 
-        # ============ ICP Odometry Node ============
+    return LaunchDescription(declared_args + [
         Node(
             package='rtabmap_odom',
             executable='icp_odometry',
@@ -65,9 +48,7 @@ def generate_launch_description():
                 'deskewing': LaunchConfiguration('deskewing'),
                 'use_sim_time': LaunchConfiguration('use_sim_time'),
             }],
-            remappings=[
-                ('scan_cloud', '/lidar_points')
-            ],
+            remappings=[('scan_cloud', '/lidar_points')],
             arguments=[
                 'Icp/PointToPlane', 'true',
                 'Icp/Iterations', '10',
@@ -84,13 +65,10 @@ def generate_launch_description():
                 'OdomF2M/ScanSubtractRadius', '0.1',
                 'OdomF2M/ScanMaxSize', '15000',
                 'OdomF2M/BundleAdjustment', 'false',
-                '--ros-args',
-                '--log-level',
-                LaunchConfiguration('icp_odometry_log_level'),
+                '--ros-args', '--log-level', LaunchConfiguration('icp_odometry_log_level'),
             ]
         ),
 
-        # ============ point_cloud_assembler Node ============
         Node(
             package='rtabmap_util',
             executable='point_cloud_assembler',
@@ -100,12 +78,9 @@ def generate_launch_description():
                 'fixed_frame_id': '',
                 'use_sim_time': LaunchConfiguration('use_sim_time'),
             }],
-            remappings=[
-                ('cloud', 'odom_filtered_input_scan')
-            ]
+            remappings=[('cloud', 'odom_filtered_input_scan')]
         ),
 
-        # ============ RTAB-Map Node (Reusing DB) ============
         Node(
             package='rtabmap_slam',
             executable='rtabmap',
@@ -120,35 +95,12 @@ def generate_launch_description():
                 'wait_for_transform': 0.3,
                 'use_sim_time': LaunchConfiguration('use_sim_time'),
             }],
-            remappings=[
-                ('scan_cloud', 'assembled_cloud')
-            ],
-            # Only launch if restart_map == "false"
-            condition=IfCondition(
-                PythonExpression([
-                    '"', LaunchConfiguration('restart_map'), '" == "false"'
-                ])
-            ),
+            remappings=[('scan_cloud', 'assembled_cloud')],
+            condition=IfCondition(PythonExpression(['"', LaunchConfiguration('restart_map'), '" == "false"'])),
             arguments=[
-                # Decide if we do mapping (IncrementalMemory=true) or localization (false)
-                'Mem/IncrementalMemory',
-                PythonExpression([
-                    '"false" if "', LaunchConfiguration('localize_only'), '" == "true" else "true"'
-                ]),
-
-                # If localizing only, we often want to load all nodes in WM:
-                'Mem/InitWMWithAllNodes',
-                PythonExpression([
-                    '"true" if "', LaunchConfiguration('localize_only'), '" == "true" else "false"'
-                ]),
-
-                # Optionally do not grow DB in localization mode:
-                'Mem/LocalizationDataSaved',
-                PythonExpression([
-                    '"false" if "', LaunchConfiguration('localize_only'), '" == "true" else "true"'
-                ]),
-
-                # Other parameters unchanged...
+                'Mem/IncrementalMemory', PythonExpression(['"false" if "', LaunchConfiguration('localize_only'), '" == "true" else "true"']),
+                'Mem/InitWMWithAllNodes', PythonExpression(['"true" if "', LaunchConfiguration('localize_only'), '" == "true" else "false"']),
+                'Mem/LocalizationDataSaved', PythonExpression(['"false" if "', LaunchConfiguration('localize_only'), '" == "true" else "true"']),
                 'RGBD/ProximityMaxGraphDepth', '0',
                 'RGBD/ProximityPathMaxNeighbors', '1',
                 'RGBD/AngularUpdate', '0.05',
@@ -169,14 +121,10 @@ def generate_launch_description():
                 'Icp/Strategy', '1',
                 'Icp/OutlierRatio', '0.7',
                 'Icp/CorrespondenceRatio', '0.2',
-
-                '--ros-args',
-                '--log-level',
-                LaunchConfiguration('rtabmap_log_level'),
+                '--ros-args', '--log-level', LaunchConfiguration('rtabmap_log_level'),
             ]
         ),
 
-        # ============ RTAB-Map Node (Restarting DB) ============
         Node(
             package='rtabmap_slam',
             executable='rtabmap',
@@ -191,34 +139,13 @@ def generate_launch_description():
                 'wait_for_transform': 0.3,
                 'use_sim_time': LaunchConfiguration('use_sim_time'),
             }],
-            remappings=[
-                ('scan_cloud', 'assembled_cloud')
-            ],
-            # Only launch if restart_map == "true"
-            condition=IfCondition(
-                PythonExpression([
-                    '"', LaunchConfiguration('restart_map'), '" == "true"'
-                ])
-            ),
+            remappings=[('scan_cloud', 'assembled_cloud')],
+            condition=IfCondition(PythonExpression(['"', LaunchConfiguration('restart_map'), '" == "true"'])),
             arguments=[
-                # Same logic for mapping vs. localization:
-                'Mem/IncrementalMemory',
-                PythonExpression([
-                    '"false" if "', LaunchConfiguration('localize_only'), '" == "true" else "true"'
-                ]),
-                'Mem/InitWMWithAllNodes',
-                PythonExpression([
-                    '"true" if "', LaunchConfiguration('localize_only'), '" == "true" else "false"'
-                ]),
-                'Mem/LocalizationDataSaved',
-                PythonExpression([
-                    '"false" if "', LaunchConfiguration('localize_only'), '" == "true" else "true"'
-                ]),
-
-                # Wipe old DB:
+                'Mem/IncrementalMemory', PythonExpression(['"false" if "', LaunchConfiguration('localize_only'), '" == "true" else "true"']),
+                'Mem/InitWMWithAllNodes', PythonExpression(['"true" if "', LaunchConfiguration('localize_only'), '" == "true" else "false"']),
+                'Mem/LocalizationDataSaved', PythonExpression(['"false" if "', LaunchConfiguration('localize_only'), '" == "true" else "true"']),
                 '--delete_db_on_start',
-
-                # Other parameters unchanged...
                 'RGBD/ProximityMaxGraphDepth', '0',
                 'RGBD/ProximityPathMaxNeighbors', '1',
                 'RGBD/AngularUpdate', '0.05',
@@ -239,14 +166,10 @@ def generate_launch_description():
                 'Icp/Strategy', '1',
                 'Icp/OutlierRatio', '0.7',
                 'Icp/CorrespondenceRatio', '0.2',
-
-                '--ros-args',
-                '--log-level',
-                LaunchConfiguration('rtabmap_log_level'),
+                '--ros-args', '--log-level', LaunchConfiguration('rtabmap_log_level'),
             ]
         ),
 
-        # ============ (Optional) RTAB-Map Viz Node ============
         Node(
             package='rtabmap_viz',
             executable='rtabmap_viz',
@@ -259,17 +182,13 @@ def generate_launch_description():
                 'approx_sync': True,
                 'use_sim_time': LaunchConfiguration('use_sim_time'),
             }],
-            remappings=[
-                ('scan_cloud', 'odom_filtered_input_scan')
-            ],
+            remappings=[('scan_cloud', 'odom_filtered_input_scan')],
             condition=IfCondition(LaunchConfiguration('use_rtabmapviz'))
         ),
 
-        # ============ Static TF between base_link and hesai_lidar ============
         Node(
             package='tf2_ros',
             executable='static_transform_publisher',
             arguments=['0', '0', '0.2', '0', '0', '0', 'base_link', 'hesai_lidar']
-        ),
+        )
     ])
-

@@ -1,34 +1,44 @@
+import yaml
+from pathlib import Path
+
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
-from launch.substitutions import PathJoinSubstitution, LaunchConfiguration
+from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch.conditions import IfCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.substitutions import FindPackageShare
 
 
+def load_launch_config():
+    config_file_path = Path(__file__).parent / '../config/mapping.yaml'
+    with open(config_file_path, 'r') as file:
+        config = yaml.safe_load(file)
+    return config.get('launch_args', {})
+
+
 def generate_launch_description():
+    launch_args = load_launch_config()
+
     return LaunchDescription([
-        # Declare arguments for configuration
         DeclareLaunchArgument(
             name='use_rviz',
-            default_value='true',
+            default_value=str(launch_args.get('use_rviz', 'true')).lower(),
             choices=['true', 'false'],
             description='Open RVIZ for visualization'
         ),
         DeclareLaunchArgument(
             name='localize_only',
-            default_value='true',
+            default_value=str(launch_args.get('localize_only', 'true')).lower(),
             choices=['true', 'false'],
             description='Localize only, do not change loaded map'
         ),
         DeclareLaunchArgument(
             name='restart_map',
-            default_value='true',
+            default_value=str(launch_args.get('restart_map', 'true')).lower(),
             choices=['true', 'false'],
             description='Delete previous map and restart'
         ),
 
-        # Include hesai_ros_driver start.py
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 PathJoinSubstitution([
@@ -39,7 +49,6 @@ def generate_launch_description():
             )
         ),
 
-        # Include rtabmap only lidar launch file
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 PathJoinSubstitution([

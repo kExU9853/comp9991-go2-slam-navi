@@ -1,0 +1,4 @@
+launch_args:
+  use_rviz: false
+  localize_only: false
+  restart_map: true

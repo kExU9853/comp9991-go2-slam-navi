@@ -1,0 +1,3 @@
+[console_scripts]
+sport_controller = my_unitree_controller.controller:main
+

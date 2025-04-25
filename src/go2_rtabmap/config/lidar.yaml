@@ -1,0 +1,8 @@
+launch_args:
+  use_sim_time: false
+  deskewing: false
+  localize_only: false
+  restart_map: true
+  use_rtabmapviz: true
+  rtabmap_log_level: 'WARN'
+  icp_odometry_log_level: 'WARN'
