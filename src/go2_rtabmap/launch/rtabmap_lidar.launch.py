@@ -8,7 +8,7 @@ from launch.conditions import IfCondition
 from launch_ros.actions import Node
 
 def load_config():
-    config_path = Path(__file__).parent.parent / 'config' / 'lidar.yaml'
+    config_path = Path(__file__).parent.parent / 'config' / 'rtabmap_lidar_config.yaml'
     with open(config_path, 'r') as f:
         data = yaml.safe_load(f)
     return data.get('launch_args', {})

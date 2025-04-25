@@ -10,7 +10,7 @@ from launch_ros.substitutions import FindPackageShare
 
 
 def load_launch_config():
-    config_file_path = Path(__file__).parent / '../config/mapping.yaml'
+    config_file_path = Path(__file__).parent / '../config/map_config.yaml'
     with open(config_file_path, 'r') as file:
         config = yaml.safe_load(file)
     return config.get('launch_args', {})
