@@ -1,1 +1,0 @@
-/home/xk/go2_slam_nav/build/imu_filter_madgwick/ament_cmake_core/imu_filter_madgwickConfig.cmake

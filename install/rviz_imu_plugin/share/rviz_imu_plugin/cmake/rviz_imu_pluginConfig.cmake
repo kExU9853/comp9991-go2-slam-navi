@@ -1,1 +1,0 @@
-/home/xk/go2_slam_nav/build/rviz_imu_plugin/ament_cmake_core/rviz_imu_pluginConfig.cmake
