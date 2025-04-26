@@ -1,1 +1,0 @@
-/home/xk/go2_slam_nav/build/go2_nav2/launch/bringup.launch.py

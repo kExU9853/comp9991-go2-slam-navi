@@ -1,9 +1,0 @@
-source;share/go2_rtabmap/hook/pythonpath.ps1
-source;share/go2_rtabmap/hook/pythonpath.dsv
-source;share/go2_rtabmap/hook/pythonpath.sh
-source;share/go2_rtabmap/hook/ament_prefix_path.ps1
-source;share/go2_rtabmap/hook/ament_prefix_path.dsv
-source;share/go2_rtabmap/hook/ament_prefix_path.sh
-source;../../build/go2_rtabmap/share/go2_rtabmap/hook/pythonpath_develop.ps1
-source;../../build/go2_rtabmap/share/go2_rtabmap/hook/pythonpath_develop.dsv
-source;../../build/go2_rtabmap/share/go2_rtabmap/hook/pythonpath_develop.sh
