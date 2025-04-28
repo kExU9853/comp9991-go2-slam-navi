@@ -76,10 +76,8 @@ def generate_launch_description():
                 'OdomF2M/BundleAdjustment', 'false',
                 '--ros-args',
                 '--log-level',
-                [
-                    TextSubstitution(text='icp_odometry:='),
-                    LaunchConfiguration('icp_odometry_log_level'),
-                ],
+                LaunchConfiguration('icp_odometry_log_level'),
+
             ]
             ),
             
@@ -138,10 +136,8 @@ def generate_launch_description():
                 'Icp/CorrespondenceRatio', '0.2',
                 '--ros-args',
                 '--log-level',
-                [
-                    TextSubstitution(text='rtabmap:='),
-                    LaunchConfiguration('rtabmap_log_level'),
-                ],
+                LaunchConfiguration('rtabmap_log_level'),
+
             ]), 
         Node(
             package='rtabmap_ros', executable='rtabmapviz', output='screen',
