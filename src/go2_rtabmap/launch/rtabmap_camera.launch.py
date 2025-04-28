@@ -146,6 +146,8 @@ def generate_launch_description():
                 'odom_frame_id':'odom',
                 'subscribe_odom_info':True,
                 'subscribe_scan_cloud':True,
+                'subscribe_rgb': True,
+                'subscribe_depth': True,
                 'approx_sync':True, # False
                 'use_sim_time':LaunchConfiguration('use_sim_time'),
             }],
