@@ -94,7 +94,7 @@ def generate_launch_description():
                 PathJoinSubstitution([
                     FindPackageShare('go2_rtabmap'),
                     'launch',
-                    'rtabmapcamera.launch.py'
+                    'rtabmap_camera.launch.py'
                 ])
             ),
             launch_arguments=[
