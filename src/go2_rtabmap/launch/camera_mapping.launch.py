@@ -60,15 +60,29 @@ def generate_launch_description():
             arguments=['--frame-id', 'base_link',
                        '--child-frame-id', 'hesai_lidar'],
         ),
+                # hesai_lidar -> camera_link
         Node(
             package="tf2_ros",
             executable="static_transform_publisher",
-            arguments=['--frame-id', 'hesai_lidar',
-                       '--child-frame-id', 'camera_link'],
+            output="screen",
+            arguments=[
+                '0', '0', '0',   # x y z 平移
+                '0', '0', '0', '1',  # qx qy qz qw 四元数旋转
+                'hesai_lidar', 'camera_link'
+            ],
         ),
+        
+        # camera_gyro_optical_frame -> camera_imu_optical_frame
         Node(
-            package='tf2_ros', executable='static_transform_publisher', output='screen',
-            arguments=['0', '0', '0', '0', '0', '0', 'camera_gyro_optical_frame', 'camera_imu_optical_frame']),
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            output='screen',
+            arguments=[
+                '0', '0', '0',   # x y z 平移
+                '0', '0', '0', '1',  # qx qy qz qw 四元数旋转
+                'camera_gyro_optical_frame', 'camera_imu_optical_frame'
+            ],
+        ),
 
         Node(
             package='imu_filter_madgwick', executable='imu_filter_madgwick_node', output='screen',
