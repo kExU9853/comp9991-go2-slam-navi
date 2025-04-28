@@ -1,9 +1,3 @@
-# Example:
-#   $ ros2 launch rslidar_sdk start.py
-#
-#   SLAM:
-#   $ ros2 launch rtabmap_ros rslidar_robosense.launch.py
-
 
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
