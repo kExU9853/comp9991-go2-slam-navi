@@ -140,7 +140,7 @@ def generate_launch_description():
 
             ]), 
         Node(
-            package='rtabmap_viz', executable='rtabmapviz', output='screen',
+            package='rtabmap_viz', executable='rtabmap_viz', output='screen',
             parameters=[{
                 'frame_id':'hesai_lidar',
                 'odom_frame_id':'odom',
