@@ -1,12 +1,10 @@
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
 from launch.substitutions import PathJoinSubstitution, LaunchConfiguration
-from launch.conditions import IfCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
-# launch the camera firstly.
-# ros2 launch realsense2_camera rs_launch.py enable_gyro:=true enable_accel:=true unite_imu_method:=1 enable_infra1:=true enable_infra2:=true enable_sync:=true 
+
 def generate_launch_description():
     return LaunchDescription([
 
@@ -19,7 +17,7 @@ def generate_launch_description():
 
         DeclareLaunchArgument(
             name='use_rtabmapviz',
-            default_value='false',  # suppress incessant VTK 9.0 warnings
+            default_value='false',
             choices=['true', 'false'],
             description='Start rtabmapviz node'
         ),
@@ -40,9 +38,9 @@ def generate_launch_description():
 
         DeclareLaunchArgument(
             name='icp_odometry_log_level',
-            default_value='WARN',  # reduce output from this node
+            default_value='WARN',
             choices=['ERROR', 'WARN', 'INFO', 'DEBUG'],
-            description='Set logger level for icp_odometry. Can set to WARN to reduce message output from this node.'
+            description='Set logger level for icp_odometry.'
         ),
 
         DeclareLaunchArgument(
@@ -52,47 +50,57 @@ def generate_launch_description():
             description='Open RVIZ for visualization'
         ),
 
-        # Publish a static transform between base_link and base_laser for standalone use
-        # of this launch file
-        Node(
-            package="tf2_ros",
-            executable="static_transform_publisher",
-            arguments=['--frame-id', 'base_link',
-                       '--child-frame-id', 'hesai_lidar'],
-        ),
-                # hesai_lidar -> camera_link
+        # static transform: base_link -> hesai_lidar
         Node(
             package="tf2_ros",
             executable="static_transform_publisher",
             output="screen",
             arguments=[
-                '0', '0', '0',   # x y z 平移
-                '0', '0', '0', '1',  # qx qy qz qw 四元数旋转
+                '0', '0', '0', 
+                '0', '0', '0', '1',
+                'base_link', 'hesai_lidar'
+            ],
+        ),
+
+        # static transform: hesai_lidar -> camera_link
+        Node(
+            package="tf2_ros",
+            executable="static_transform_publisher",
+            output="screen",
+            arguments=[
+                '0', '0', '0',
+                '0', '0', '0', '1',
                 'hesai_lidar', 'camera_link'
             ],
         ),
-        
-        # camera_gyro_optical_frame -> camera_imu_optical_frame
+
+        # static transform: camera_gyro_optical_frame -> camera_imu_optical_frame
         Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            output='screen',
+            package="tf2_ros",
+            executable="static_transform_publisher",
+            output="screen",
             arguments=[
-                '0', '0', '0',   # x y z 平移
-                '0', '0', '0', '1',  # qx qy qz qw 四元数旋转
+                '0', '0', '0',
+                '0', '0', '0', '1',
                 'camera_gyro_optical_frame', 'camera_imu_optical_frame'
             ],
         ),
 
         Node(
-            package='imu_filter_madgwick', executable='imu_filter_madgwick_node', output='screen',
-            parameters=[{'use_mag': False,
-                         'world_frame': 'enu',
-                         'publish_tf': False}],
-            remappings=[('imu/data_raw', '/camera/imu')]),
+            package='imu_filter_madgwick',
+            executable='imu_filter_madgwick_node',
+            output='screen',
+            parameters=[{
+                'use_mag': False,
+                'world_frame': 'enu',
+                'publish_tf': False
+            }],
+            remappings=[
+                ('imu/data_raw', '/camera/imu')
+            ]
+        ),
 
-
-        # Include hesai_ros_driver start.py
+        # hesai_ros_driver start
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 PathJoinSubstitution([
@@ -102,7 +110,8 @@ def generate_launch_description():
                 ])
             )
         ),
-        
+
+        # rtabmap_camera.launch.py
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 PathJoinSubstitution([
@@ -113,8 +122,7 @@ def generate_launch_description():
             ),
             launch_arguments=[
                 ('use_rtabmapviz', LaunchConfiguration('use_rtabmapviz')),
-                ('icp_odometry_log_level', LaunchConfiguration(
-                    'icp_odometry_log_level')),
+                ('icp_odometry_log_level', LaunchConfiguration('icp_odometry_log_level')),
                 ('localize_only', LaunchConfiguration('localize_only')),
                 ('restart_map', LaunchConfiguration('restart_map')),
             ],
